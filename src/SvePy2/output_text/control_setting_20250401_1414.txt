@@ -1,0 +1,156 @@
+ButcherTableA , [[0.5 0.  0. ]
+ [0.  0.5 0. ]
+ [0.  0.  1. ]]
+ButcherTableB , [0.1666666667 0.3333333333 0.3333333333 0.1666666667]
+ButcherTableC , [0.  0.5 0.5 1. ]
+IC_interp_elevation_filename , elevation_output_#.txt
+IC_interp_elevation_folder , elevation folder name
+IC_interp_elevation_time , 0
+IC_interp_xvalue_filename , xvalue_output_#.txt
+IC_interp_xvalue_folder , xvalue folder name
+IC_type , custom
+NX , 256
+angle_minimum , 0.0017453292519943296
+area_maximum , 2.0
+area_zero_value , 1e-07
+binsave , True
+binsave_data_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_binary/output_bindata_20250401_1414.npy
+binsave_directory , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_binary
+binsave_element , ['volume', 'flowrate', 'eta', 'froude']
+binsave_face , []
+binsave_time_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_binary/output_bintime_20250401_1414.npy
+binsave_time_units , seconds
+binsave_timeinterval , 5
+binsave_writedata , True
+cfl_increase_dt , 0.6
+cfl_increase_stepcounter , 0
+cfl_increase_stepinterval_from_decrease , 10
+cfl_max , 0.7
+check_element , None
+check_total_volume_stepinterval , 1
+completely_silent , False
+custom_overwrite , <bound method SettingDefault.custom_overwrite of <SettingDefault.SettingDefault object at 0x7f8ce39daba0>>
+depth_maximum_expected , 5.0
+depth_small_value , 0.001
+depth_small_value_default_n , 0.01
+depth_zero_value , 0.0001
+dt , 0.01
+dt_min , 1e-07
+face_area_min , 0.01
+flow_over_a_bump_NX , 256
+flowrate_IC , 0.01
+flowrate_zero_value , 0.0001
+froude_limit_small_volume , 0.5
+geometry_add_downstream_buffer , False
+geometry_adjust , True
+geometry_adjust_fraction , 0.01
+geometry_adjust_fraction_max , 0.05
+geometry_case , flow_over_a_bump
+geometry_channel_type , rectangular
+geometry_downstream_minimum_length , 0.0
+geometry_number_widthdepth_pairs , 0
+geometry_small_width , 1e-08
+geometry_total_length , 50
+geometry_types , ['rectangular_channel', 'parabolic_channel', 'trapezoidal_channel', 'widthdepth_pair']
+gravity , 9.81
+heightBC , 0.262
+inflowBC , 0.18
+inflowBCsaved , 0.18
+inflow_rampup , True
+inflow_rampup_time , 100
+inflow_rampup_time_units , seconds
+inoisy , True
+mannings_n_for_buffer , 0.03
+mannings_n_global_default , 0.0
+mannings_n_use_global_default , True
+method_Q_adjust_Vshape , True
+method_Q_adjust_Vshape_coef , 1.0
+method_Q_adjust_inconsistent , False
+method_Q_damp_oscillation_coef , 0.01
+method_Q_damp_oscillation_type , None
+method_area_interpolation , timescale
+method_eta_interpolation , linear
+method_flowrate_interpolation , timescale
+method_froude_interpolation , True
+method_hydjump_Froude_epsilon , 0.1
+method_hydjump_Momentum_epsilon , 0.05
+method_hydjump_face , momentum_match
+method_momentum , T00
+method_perimeter_interpolation , timescale
+method_rungekutta , rk4_classic
+method_topwidth_interpolation , timescale
+method_use_cosangle , True
+plot_element_limits , [20, 75]
+plot_iterstart , 0
+plot_time_interval , 1
+plot_types , ['free_surface', 'flowrate']
+print_debug_iterstart , 1
+print_time_header_step_interval , 10
+restart_directory , restart
+restart_flowratefile , flowrate_output_#.txt
+restart_time , 0
+restart_time_units , seconds
+restart_volumefile , volume_output_#.txt
+rungekutta_levels , 4
+setting_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/control_setting_20250401_1414.txt
+steady_solution_exists , True
+steady_solution_resolution , 20
+steady_solution_type , eta
+steps_max , 30000
+swashes_bin , /home/marie/anaconda3/envs/Hydro/bin/swashes
+swashes_choice , 3
+swashes_domain , 1
+swashes_stype , 1
+thisrun_timestamp , 20250401_1414
+time_scale_maximum , 1000000.0
+time_scale_minimum , 1e-06
+time_total , 300
+time_units , seconds
+topwidth_zero_value , 0.0001
+total_volume_element , 0
+total_volume_face , 0
+txtout_area_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/area_output_20250401_1414.txt
+txtout_breadth_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/breadth_output_20250401_1414.txt
+txtout_directory , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text
+txtout_elevation_faceM_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/elevation_faceM_output_20250401_1414.txt
+txtout_elevation_faceP_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/elevation_faceP_output_20250401_1414.txt
+txtout_elevation_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/elevation_output_20250401_1414.txt
+txtout_file_area , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/area_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_breadth , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/breadth_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_elevation , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/elevation_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_elevation_faceM , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/elevation_faceM_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_elevation_faceP , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/elevation_faceP_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_flowrate , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/flowrate_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_flowrate_face , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/flowrate_face_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_hyddepth , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/hyddepth_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_length , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/length_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_manningsn , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/manningsn_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_timestep , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/timestep_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_volume , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/volume_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_xvalue , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/xvalue_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_xvalue_face , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/xvalue_face_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_zbottom , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/zbottom_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_file_zbottom_face , <_io.TextIOWrapper name='/home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/zbottom_face_output_20250401_1414.txt' mode='w' encoding='UTF-8'>
+txtout_flowrate_face_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/flowrate_face_output_20250401_1414.txt
+txtout_flowrate_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/flowrate_output_20250401_1414.txt
+txtout_hyddepth_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/hyddepth_output_20250401_1414.txt
+txtout_items_on_line_maximum , 100
+txtout_length_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/length_output_20250401_1414.txt
+txtout_manningsn_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/manningsn_output_20250401_1414.txt
+txtout_timestep_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/timestep_output_20250401_1414.txt
+txtout_volume_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/volume_output_20250401_1414.txt
+txtout_writedata , True
+txtout_writedata_header , Restart File
+txtout_writedata_starttime , 0
+txtout_writedata_time_units , seconds
+txtout_writedata_timeinterval , 2.0
+txtout_xvalue_face_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/xvalue_face_output_20250401_1414.txt
+txtout_xvalue_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/xvalue_output_20250401_1414.txt
+txtout_zbottom_face_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/zbottom_face_output_20250401_1414.txt
+txtout_zbottom_filename , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy/output_text/zbottom_output_20250401_1414.txt
+user_case_name , flow_over_a_bump_128
+velocity_limit , 10
+velocity_limit_small_volume , 0.2
+velocity_zero_value , 0.0001
+volume_zero_value , 1e-06
+working_directory , /home/marie/Repos/todo-mio/UTADEO/7° SEMESTRE/SISTEMAS DINÁMICOS/Proyecto/src/SvePy
