@@ -1,0 +1,97 @@
+\documentclass{article}
+
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{thmtools}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{framed}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{caption}
+\usepackage{longtable}
+\usepackage{pdflscape}
+\usepackage{svg}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{cancel}
+
+
+\begin{document}
+
+En el proyecto se utilizan las ecuaciones de Saint Venant para poder modelar el comportamiento del cauldal del río y de su profundidad.
+
+La ecuación de continuidad es:
+
+\begin{equation}
+  \label{eq:cont-sv}
+  \frac{\partial s_{c} (A + A_{0})}{\partial t} + \frac{\partial Q}{\partial x} - q_{L} = 0
+\end{equation}
+
+
+
+Donde $s_{c}$ es el coeficiente de sinuosidad, $A$ es el área, $t$ es el tiempo, $Q$ es el cauldal, $x$ es la distancia del río, y, $q_{L}$ es el flujo lateral que se define como:
+
+\[
+q_{L} = q_{L1} + q_{L2}
+\]
+
+Donde $q_{L1}$ es el sobreflujo lateral y $q_{L2}$ es la filtración del desborde (lo que sale).
+
+Por otro lado, se tiene la ecuación del momentum:
+
+\begin{equation}
+  \label{eq:momen-sv}
+  \frac{\partial S_{m}Q}{\partial t} + \frac{\partial (\beta Q^{2} / A) }{\partial x} + g A \left(\frac{\partial h_{r}}{\partial x} + S_{f} + S_{ec}  \right) + M_{L} = 0 
+\end{equation}
+
+
+
+Donde $S_{m}$ es el factor de sinuosidad, $Q$ es el caudal, $t$ es el tiempo, $\beta$ es el coeficiente del momentum para la distribución de la velocidad, $A$ es el área, $x$ es la distancia del río, $g$ es la aceleración de la gravedad, $h_{r}$ es la altura del río, $S_{f}$ es la fricción de la pendiente, $S_{ec}$ es la pérdida por fricción, y, $M_{L}$ es el flujo del momento en los bordes.
+
+Se va a realizar una aproximación numérica mediante el método de diferencias finitas, por lo tanto, las ecuaciones \ref{eq:cont-sv} y \ref{eq:momen-sv} se adaptan a continuación, en primer lugar, la ecuación \ref{eq:cont-sv} de continuidad.
+
+\begin{align*}
+  &\frac{\partial s_{c} (A + A_{0})}{\partial t} + \frac{\partial Q}{\partial x} - q_{L} = 0 \\
+  &\frac{s_{c} (A + A_{0})_{i}^{j+1} - s_{c}(A + A_{0})_{i}^{j} }{\Delta t} + \frac{Q_{i}^{j} - Q_{i-1}^{j} }{\Delta x} - q_{Li}^{j} = 0   
+\end{align*}
+
+\begin{tcolorbox}
+\begin{equation}
+  \label{eq:cont-sim}
+  A_{i}^{j+1} = \frac{\left(q_{Li}^{j} - \frac{Q_{i}^{j} - Q_{i-1}^{j} }{\Delta x}  \right) \Delta t + s_{c} (A + A_{0})_{i}^{j}}{s_{c}} - (A_{0})_{i}^{j+1}
+\end{equation}
+  
+\end{tcolorbox}
+
+
+Ahora, para la ecuación \ref{eq:momen-sv} de momentum:
+
+\[
+\frac{s_{m} (Q)_{i}^{j+1} - s_{m}(Q)_{i}^{j} }{\Delta t} + \frac{(\beta Q^{2}/A)_{i}^{j} - (\beta Q^{2} /A)_{i-1}^{j} }{\Delta x} + gA \left( \frac{(h_{r})_{i}^{j} - (h_{r})_{i-1}^{j}}{\Delta x} + S_{f} + S_{ec}   \right) + M_{L} = 0
+\]
+
+Despejando para $Q_{i}^{j+1}$:
+
+\begin{tcolorbox}
+\begin{equation}
+  \label{eq:momen-sim}
+  Q_{i}^{j+1} = \frac{\left[ -M_{L} - g(A_{i}^{j}) \left(\frac{\left(\frac{A}{W}\right)_{i}^{j} - \left(\frac{A}{W}\right)_{i-1}^{j} }{\Delta x} + S_{t} + S_{a}  \right) - \frac{ \left( \frac{\beta Q^{2}}{A} \right)_{i}^{j} - \left( \frac{\beta Q^{2}}{A} \right)_{i-1}^{j}  }{\Delta x}           \right] \Delta t + S_{m} (Q)_{i}^{j}}{s_{m}}
+\end{equation}
+
+  
+\end{tcolorbox}
+
+
+Se hizo el cambio de variable $h = \frac{A}{W}$
+
+
+\end{document}
