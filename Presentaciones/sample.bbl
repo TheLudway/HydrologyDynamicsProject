@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{deaton1999dynamic}{book}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{deaton1999dynamic}{book}{}{}
       \name{author}{2}{}{%
         {{hash=c9955100503098e0dbc73e0bf49f0de5}{%
            family={Deaton},
@@ -37,10 +37,12 @@
       }
       \strng{namehash}{88f29efd8a0ea95af6a1b2af907f7442}
       \strng{fullhash}{88f29efd8a0ea95af6a1b2af907f7442}
+      \strng{fullhashraw}{88f29efd8a0ea95af6a1b2af907f7442}
       \strng{bibnamehash}{88f29efd8a0ea95af6a1b2af907f7442}
       \strng{authorbibnamehash}{88f29efd8a0ea95af6a1b2af907f7442}
       \strng{authornamehash}{88f29efd8a0ea95af6a1b2af907f7442}
       \strng{authorfullhash}{88f29efd8a0ea95af6a1b2af907f7442}
+      \strng{authorfullhashraw}{88f29efd8a0ea95af6a1b2af907f7442}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -48,7 +50,7 @@
       \field{title}{Dynamic modeling of environmental systems}
       \field{year}{1999}
     \endentry
-    \entry{julien2018river}{book}{}
+    \entry{julien2018river}{book}{}{}
       \name{author}{1}{}{%
         {{hash=028ed7f529750c0a67b6ab49603848fc}{%
            family={Julien},
@@ -61,10 +63,12 @@
       }
       \strng{namehash}{028ed7f529750c0a67b6ab49603848fc}
       \strng{fullhash}{028ed7f529750c0a67b6ab49603848fc}
+      \strng{fullhashraw}{028ed7f529750c0a67b6ab49603848fc}
       \strng{bibnamehash}{028ed7f529750c0a67b6ab49603848fc}
       \strng{authorbibnamehash}{028ed7f529750c0a67b6ab49603848fc}
       \strng{authornamehash}{028ed7f529750c0a67b6ab49603848fc}
       \strng{authorfullhash}{028ed7f529750c0a67b6ab49603848fc}
+      \strng{authorfullhashraw}{028ed7f529750c0a67b6ab49603848fc}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
@@ -72,7 +76,7 @@
       \field{title}{River mechanics}
       \field{year}{2018}
     \endentry
-    \entry{kuleuven_river_image}{misc}{}
+    \entry{kuleuven_river_image}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=bc56b218c96f3953413c3547e3768cd3}{%
            family={{KU Leuven Hydraulics Research}},
@@ -80,10 +84,12 @@
       }
       \strng{namehash}{bc56b218c96f3953413c3547e3768cd3}
       \strng{fullhash}{bc56b218c96f3953413c3547e3768cd3}
+      \strng{fullhashraw}{bc56b218c96f3953413c3547e3768cd3}
       \strng{bibnamehash}{bc56b218c96f3953413c3547e3768cd3}
       \strng{authorbibnamehash}{bc56b218c96f3953413c3547e3768cd3}
       \strng{authornamehash}{bc56b218c96f3953413c3547e3768cd3}
       \strng{authorfullhash}{bc56b218c96f3953413c3547e3768cd3}
+      \strng{authorfullhashraw}{bc56b218c96f3953413c3547e3768cd3}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -97,7 +103,7 @@
       \verb https://bwk.kuleuven.be/hydr/Research/urban-river/River
       \endverb
     \endentry
-    \entry{le2013introduction}{book}{}
+    \entry{le2013introduction}{book}{}{}
       \name{author}{1}{}{%
         {{hash=64b3c7afbf02cbf20c13d657980b22cd}{%
            family={Le\bibnamedelima Méhauté},
@@ -110,10 +116,12 @@
       }
       \strng{namehash}{64b3c7afbf02cbf20c13d657980b22cd}
       \strng{fullhash}{64b3c7afbf02cbf20c13d657980b22cd}
+      \strng{fullhashraw}{64b3c7afbf02cbf20c13d657980b22cd}
       \strng{bibnamehash}{64b3c7afbf02cbf20c13d657980b22cd}
       \strng{authorbibnamehash}{64b3c7afbf02cbf20c13d657980b22cd}
       \strng{authornamehash}{64b3c7afbf02cbf20c13d657980b22cd}
       \strng{authorfullhash}{64b3c7afbf02cbf20c13d657980b22cd}
+      \strng{authorfullhashraw}{64b3c7afbf02cbf20c13d657980b22cd}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -121,7 +129,7 @@
       \field{title}{An introduction to hydrodynamics and water waves}
       \field{year}{2013}
     \endentry
-    \entry{el2012using}{inproceedings}{}
+    \entry{el2012using}{inproceedings}{}{}
       \name{author}{7}{}{%
         {{hash=b767bd6b2e4f40aafdbb9c49c4aef7e5}{%
            family={El-Sawah},
@@ -165,10 +173,12 @@
       }
       \strng{namehash}{7838b2551a177089fe5e1ab8eac6d23d}
       \strng{fullhash}{031df0b90edb0eb3c26a66a7eb258499}
+      \strng{fullhashraw}{031df0b90edb0eb3c26a66a7eb258499}
       \strng{bibnamehash}{7838b2551a177089fe5e1ab8eac6d23d}
       \strng{authorbibnamehash}{7838b2551a177089fe5e1ab8eac6d23d}
       \strng{authornamehash}{7838b2551a177089fe5e1ab8eac6d23d}
       \strng{authorfullhash}{031df0b90edb0eb3c26a66a7eb258499}
+      \strng{authorfullhashraw}{031df0b90edb0eb3c26a66a7eb258499}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -179,7 +189,7 @@
       \field{pages}{1367\bibrangedash 1374}
       \range{pages}{8}
     \endentry
-    \entry{steffler2002introduction}{article}{}
+    \entry{steffler2002introduction}{article}{}{}
       \name{author}{2}{}{%
         {{hash=f7e66a70c32d787e19c2af200e33c39b}{%
            family={Steffler},
@@ -194,10 +204,12 @@
       }
       \strng{namehash}{23490f50d1ebfbcda187cc815d26f0f5}
       \strng{fullhash}{23490f50d1ebfbcda187cc815d26f0f5}
+      \strng{fullhashraw}{23490f50d1ebfbcda187cc815d26f0f5}
       \strng{bibnamehash}{23490f50d1ebfbcda187cc815d26f0f5}
       \strng{authorbibnamehash}{23490f50d1ebfbcda187cc815d26f0f5}
       \strng{authornamehash}{23490f50d1ebfbcda187cc815d26f0f5}
       \strng{authorfullhash}{23490f50d1ebfbcda187cc815d26f0f5}
+      \strng{authorfullhashraw}{23490f50d1ebfbcda187cc815d26f0f5}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -206,32 +218,7 @@
       \field{title}{Introduction to depth averaged modeling and user's manual}
       \field{year}{2002}
     \endentry
-    \entry{ventechow2016river}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=b11af4cf816101a33194f8849b437944}{%
-           family={{Ven Te Chow Hydrosystems Laboratory}},
-           familyi={V\bibinitperiod}}}%
-      }
-      \strng{namehash}{b11af4cf816101a33194f8849b437944}
-      \strng{fullhash}{b11af4cf816101a33194f8849b437944}
-      \strng{bibnamehash}{b11af4cf816101a33194f8849b437944}
-      \strng{authorbibnamehash}{b11af4cf816101a33194f8849b437944}
-      \strng{authornamehash}{b11af4cf816101a33194f8849b437944}
-      \strng{authorfullhash}{b11af4cf816101a33194f8849b437944}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Modeling of River Hydrodynamics}
-      \field{year}{2016}
-      \verb{urlraw}
-      \verb https://publish.illinois.edu/ventechowlab/2016/03/18/modeling-of-river-hydrodynamics/
-      \endverb
-      \verb{url}
-      \verb https://publish.illinois.edu/ventechowlab/2016/03/18/modeling-of-river-hydrodynamics/
-      \endverb
-    \endentry
-    \entry{waterwaymap}{misc}{}
+    \entry{waterwaymap}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=5e85c5daa9907a6b6abccb8682c24be2}{%
            family={{Waterway Map Project}},
@@ -239,10 +226,12 @@
       }
       \strng{namehash}{5e85c5daa9907a6b6abccb8682c24be2}
       \strng{fullhash}{5e85c5daa9907a6b6abccb8682c24be2}
+      \strng{fullhashraw}{5e85c5daa9907a6b6abccb8682c24be2}
       \strng{bibnamehash}{5e85c5daa9907a6b6abccb8682c24be2}
       \strng{authorbibnamehash}{5e85c5daa9907a6b6abccb8682c24be2}
       \strng{authornamehash}{5e85c5daa9907a6b6abccb8682c24be2}
       \strng{authorfullhash}{5e85c5daa9907a6b6abccb8682c24be2}
+      \strng{authorfullhashraw}{5e85c5daa9907a6b6abccb8682c24be2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -256,7 +245,7 @@
       \verb https://waterwaymap.org/#map=8/4.876/-73.791
       \endverb
     \endentry
-    \entry{wu2007computational}{book}{}
+    \entry{wu2007computational}{book}{}{}
       \name{author}{1}{}{%
         {{hash=03317370a6052113c8f2c8a06e8aedc2}{%
            family={Wu},
@@ -269,10 +258,12 @@
       }
       \strng{namehash}{03317370a6052113c8f2c8a06e8aedc2}
       \strng{fullhash}{03317370a6052113c8f2c8a06e8aedc2}
+      \strng{fullhashraw}{03317370a6052113c8f2c8a06e8aedc2}
       \strng{bibnamehash}{03317370a6052113c8f2c8a06e8aedc2}
       \strng{authorbibnamehash}{03317370a6052113c8f2c8a06e8aedc2}
       \strng{authornamehash}{03317370a6052113c8f2c8a06e8aedc2}
       \strng{authorfullhash}{03317370a6052113c8f2c8a06e8aedc2}
+      \strng{authorfullhashraw}{03317370a6052113c8f2c8a06e8aedc2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}

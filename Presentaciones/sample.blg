@@ -1,17 +1,17 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'sample.blg'
-[46] biber:340> INFO - === Tue Feb 25, 2025, 19:23:18
-[55] Biber.pm:419> INFO - Reading 'sample.bcf'
-[93] Biber.pm:979> INFO - Found 9 citekeys in bib section 0
-[109] Biber.pm:4419> INFO - Processing section 0
-[117] Biber.pm:4610> INFO - Looking for bibtex file 'referencias.bib' for section 0
-[118] bibtex.pm:1713> INFO - LaTeX decoding ...
-[125] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
-[182] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[182] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[182] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'es-ES'
-[192] bbl.pm:660> INFO - Writing 'sample.bbl' with encoding 'UTF-8'
-[194] bbl.pm:763> INFO - Output to sample.bbl
-[195] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'kuleuven_river_image' is not an integer - this will probably not sort properly.
-[195] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'waterwaymap' is not an integer - this will probably not sort properly.
-[195] Biber.pm:133> INFO - WARNINGS: 2
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'sample.blg'
+[51] biber:340> INFO - === Mon Apr  7, 2025, 09:21:36
+[62] Biber.pm:420> INFO - Reading 'sample.bcf'
+[95] Biber.pm:994> INFO - Found 8 citekeys in bib section 0
+[104] Biber.pm:4463> INFO - Processing section 0
+[110] Biber.pm:4654> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[111] bibtex.pm:1713> INFO - LaTeX decoding ...
+[114] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
+[154] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[154] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[154] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[160] bbl.pm:676> INFO - Writing 'sample.bbl' with encoding 'UTF-8'
+[162] bbl.pm:779> INFO - Output to sample.bbl
+[162] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'kuleuven_river_image' is not an integer - this will probably not sort properly.
+[162] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'waterwaymap' is not an integer - this will probably not sort properly.
+[162] Biber.pm:133> INFO - WARNINGS: 2

@@ -2,7 +2,7 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\beamer@sectionpages {1}{1}}
 \headcommand {\beamer@subsectionpages {1}{1}}
-\headcommand {\sectionentry {1}{Introducción}{2}{Introducción}{0}}
+\headcommand {\sectionentry {1}{Exploración de datos}{2}{Exploración de datos}{0}}
 \headcommand {\slideentry {1}{0}{1}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\slideentry {1}{0}{2}{3/3}{}{0}}
@@ -51,12 +51,10 @@
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\slideentry {7}{0}{0}{15/16}{}{0}}
 \headcommand {\beamer@framepages {15}{16}}
-\headcommand {\slideentry {7}{0}{0}{15/17}{}{0}}
-\headcommand {\beamer@framepages {15}{17}}
-\headcommand {\slideentry {7}{0}{1}{18/18}{}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {14}{18}}
-\headcommand {\beamer@sectionpages {14}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\gdef \inserttotalframenumber {18}}
+\headcommand {\slideentry {7}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@partpages {1}{17}}
+\headcommand {\beamer@subsectionpages {14}{17}}
+\headcommand {\beamer@sectionpages {14}{17}}
+\headcommand {\beamer@documentpages {17}}
+\headcommand {\gdef \inserttotalframenumber {17}}
