@@ -2,7 +2,7 @@
 
 
 
-\title{Hidrodinámica de ríos}
+\title{Hidrodinámica del Río Magdalena a la altura de Barrancabermeja}
 \date{\today}
 \institute[UJTL]{Universidad Jorge Tadeo Lozano}
 \author{Ludwig Alvarado Becerra}
@@ -66,141 +66,122 @@
 
 \end{frame}
 
-\section{Inspiración y motivación}
+\begin{frame}[allowframebreaks]
+  \frametitle{Región de estudio}
+  
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/OSM-1.png}
+    \caption{Región a estudiar del Río Magdalena. Datos de \textit{OpenStreetMap} (OSM)\cite{openstreetmap_magdalena2025}}
+  \end{figure}
 
-\insertsectionpage
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/Waterway.png}
+    \caption{Río Magdalena. Datos sacados de \textit{Waterway}\cite{waterwaymap2025}}
+  \end{figure}
 
-\begin{frame}{Inspiración y motivación}
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/QGIS-5.png}
+    \caption{Consulta de datos utilizando QuickOSM\cite{quickosm2025}}
+  \end{figure}
+
+
+  \begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.55\textwidth]{img/QGIS-1.png}
+    \caption{Región de Barrancabermeja, elaboración propia en QGIS\cite{qgis2025}, datos de OSM\cite{openstreetmap_magdalena2025}.}
+  \end{figure}
+
 
   \begin{columns}
-    \begin{column}{.5\textwidth}
+    \begin{column}{.3\textwidth}
       \begin{itemize}
-        \item Sistemas 1D y 2D.
-        \item Fomentar interdisciplinariedad en el proyecto.
-        \item Manejo de datos geoespaciales.
-        \item Mi novia.
+        \item Se filtra la capa del Río Magdalena y se le cambia el color para que destaque.
       \end{itemize}
-
-      
     \end{column}
 
-    \begin{column}{.5\textwidth}
+    \begin{column}{.7\textwidth}
       \begin{figure}[ht]
         \centering
-        \includegraphics[width=0.8\textwidth]{img/2.png}
-        \caption{\label{fig:2} Ejemplo de modelamiento \parencite{kuleuven_river_image}.}
+        \includegraphics[width=0.8\textwidth]{img/QGIS-2.png}
+        \caption{Elaboración propia.}
       \end{figure}
+    \end{column}
+  \end{columns}
 
+
+  \begin{columns}
+    \begin{column}{.3\textwidth}
+      \begin{itemize}
+        \item Utilizar \texttt{Vector} > \texttt{Geometry Tools} > \texttt{Extract Vertices...}
+      \end{itemize}
+    \end{column}
+
+    \begin{column}{.7\textwidth}
+      \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/QGIS-3.png}
+        \caption{Elaboración propia.}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+  \begin{columns}
+    \begin{column}{.3\textwidth}
+      \begin{itemize}
+        \item Se seleccionan el segmento que se de interés para el estudio. 
+      \end{itemize}
+    \end{column}
+
+    \begin{column}{.7\textwidth}
+      \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.8\textwidth]{img/QGIS-4.png}
+        \caption{Elaboración propia.}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+  \begin{columns}
+    \begin{column}{.3\textwidth}
+      \begin{itemize}
+        \item Utilizando la herramienta de \texttt{Distance matrix...} se obtienen $472.7434 \text{ metros}$ .
+      \end{itemize}
+    \end{column}
+
+    \begin{column}{.7\textwidth}
+      \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.7\textwidth]{img/QGIS-6.png}
+        \caption{Elaboración propia.}
+      \end{figure}
     \end{column}
   \end{columns}
 
 \end{frame}
 
-
-\section{Objetivos}
-
-\insertsectionpage
-
-\begin{frame}{Objetivos}
+\begin{frame}
+  \frametitle{Consulta del ancho}
 
   \begin{columns}
-    \begin{column}{.4\textwidth}
+    \begin{column}{.3\textwidth}
       \begin{itemize}
-        \item Apicar los conceptos de la clase de Sistemas Dinámicos en un proyecto con enfoque en datos geoespaciales.
-        \item Un aplicativo interactivo que permita realizar simulaciones sobre la dinámica de un río específico.
-        \item Expandir el conocimiento de problemáticas y situaciones medioambientales del autor. 
+        \item Usando la opción \texttt{Open Field Calculator} se puede consultar la información de estos datos como si fuera SQL.
+        \item El resultado de esto son $300 \text{ metros}$
       \end{itemize}
-
-      
     \end{column}
 
-    \begin{column}{.6\textwidth}
+    \begin{column}{.7\textwidth}
       \begin{figure}[ht]
         \centering
-        \includegraphics[width=0.45\textwidth]{img/3.png}
-        \caption{\label{fig:3} Algunas Rutas hídricas de Colombia. Datos de OpenStreetMap\cite{waterwaymap}.}
+        \includegraphics[width=0.5\textwidth]{img/QGIS-7.png}
+        \caption{Consulta del ancho del Río Magdalena.}
       \end{figure}
-
     \end{column}
   \end{columns}
 
-\end{frame}
-
-\section{Revisión bibliográfica}
-
-\insertsectionpage
-
-\begin{frame}{Revisión bibliográfica}
-
-  \begin{block}{\textit{Using dynamics for environmental modelling: Lessons learnt from six case studies}\cite{el2012using}}
-  \end{block}
-
-\begin{columns}
-  \begin{column}{.5\textwidth}
-    \begin{itemize}
-      \item Revisión de algunos casos de aplicación de sistemas dinámicos en problemáticas ambientales.
-      \item Aplicación de un juego interactivo. 
-\end{itemize}
-  \end{column}
-
-  \begin{column}{.5\textwidth}
-    \begin{figure}[ht]
-      \centering
-      \includegraphics[width=0.65\textwidth]{img/4.png}
-    \end{figure}
-  \end{column}
-\end{columns}
-
-\end{frame}
-
-\begin{frame}{Revisión bibliográfica}
-
-  \begin{block}{\textit{Dynamic modeling of environmental systems}\cite{deaton1999dynamic}}
-  \end{block}
-
-\begin{columns}
-  \begin{column}{.5\textwidth}
-    \begin{itemize}
-      \item Modelado mediante Sistemas Dinámicos con diferentes aplicaciones ambientales.
-      \item Capítulo dedicado a hidrodinámica de ríos.
-      \item Ejemplo de aplicación para el río Altamaha.
-\end{itemize}
-  \end{column}
-
-  \begin{column}{.5\textwidth}
-    \begin{figure}[ht]
-      \centering
-      \includegraphics[width=1\textwidth]{img/5.png}
-    \end{figure}
-  \end{column}
-\end{columns}
-
-\end{frame}
-
-\begin{frame}{Otros recursos encontrados}
-
-\begin{itemize}
-  \item \textit{Introduction to depth averaged modeling and user's manual}\cite{steffler2002introduction}.
-  \item \textit{An Introduction to Hydrodynamics and Water Waves}\cite{le2013introduction}.
-  \item \textit{Theory and Practice of Hydrodynamic Reconstruction in Plain River
-Networks}
-  \item \textit{Computational river dynamics}\cite{wu2007computational}.
-  \item \textit{River mechanics}\cite{julien2018river}.
-\end{itemize}
-
-\end{frame}
-
-\section{\textit{Datasets}}
-
-\insertsectionpage
-
-\begin{frame}[allowframebreaks]{\textit{Datasets}}
-
-\begin{itemize}
-  \item Modelo Digital de Elevación. Colombia \url{http://www.colombiaenmapas.gov.co/?e=-75.21433704101813,4.250807726576179,-65.21677844727078,10.458355638020791,4686&b=igac&l=159&u=0&t=23&servicio=159}
-  \item Datos de ríos en Colombia \url{htts://www.openstreetmap.org}
-  \item Obtener coeficientes de rugosidad de Mannings a través de publicaciones científicas.
-\end{itemize}
 
 
 \end{frame}

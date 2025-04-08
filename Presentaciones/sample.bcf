@@ -2374,15 +2374,11 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">deaton1999dynamic</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">kuleuven_river_image</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">waterwaymap</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">waterwaymap</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">el2012using</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">deaton1999dynamic</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">steffler2002introduction</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">le2013introduction</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">wu2007computational</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">julien2018river</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">openstreetmap_magdalena2025</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">waterwaymap2025</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">quickosm2025</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">qgis2025</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">openstreetmap_magdalena2025</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -19,6 +19,29 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{quickosm2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=bab86bf339f4168b58d3b40fb6ad08b0}{%
+           family={{3liz}},
+           familyi={3\bibinitperiod}}}%
+      }
+      \strng{namehash}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \strng{fullhash}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \strng{fullhashraw}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \strng{bibnamehash}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \strng{authorbibnamehash}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \strng{authornamehash}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \strng{authorfullhash}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \strng{authorfullhashraw}{bab86bf339f4168b58d3b40fb6ad08b0}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/3liz/QuickOSM}}
+      \field{note}{Accessed: 2025-04-07}
+      \field{title}{QuickOSM - QGIS plugin to download OSM data using Overpass API}
+      \field{year}{2025}
+    \endentry
     \entry{deaton1999dynamic}{book}{}{}
       \name{author}{2}{}{%
         {{hash=c9955100503098e0dbc73e0bf49f0de5}{%
@@ -50,226 +73,74 @@
       \field{title}{Dynamic modeling of environmental systems}
       \field{year}{1999}
     \endentry
-    \entry{julien2018river}{book}{}{}
+    \entry{openstreetmap_magdalena2025}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=028ed7f529750c0a67b6ab49603848fc}{%
-           family={Julien},
-           familyi={J\bibinitperiod},
-           given={Pierre\bibnamedelima Y},
-           giveni={P\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=602f2591276bacf4409eba4a627cff11}{%
+           family={{OpenStreetMap contributors}},
+           familyi={O\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Cambridge University Press}%
-      }
-      \strng{namehash}{028ed7f529750c0a67b6ab49603848fc}
-      \strng{fullhash}{028ed7f529750c0a67b6ab49603848fc}
-      \strng{fullhashraw}{028ed7f529750c0a67b6ab49603848fc}
-      \strng{bibnamehash}{028ed7f529750c0a67b6ab49603848fc}
-      \strng{authorbibnamehash}{028ed7f529750c0a67b6ab49603848fc}
-      \strng{authornamehash}{028ed7f529750c0a67b6ab49603848fc}
-      \strng{authorfullhash}{028ed7f529750c0a67b6ab49603848fc}
-      \strng{authorfullhashraw}{028ed7f529750c0a67b6ab49603848fc}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \strng{namehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{fullhash}{602f2591276bacf4409eba4a627cff11}
+      \strng{fullhashraw}{602f2591276bacf4409eba4a627cff11}
+      \strng{bibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorbibnamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authornamehash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorfullhash}{602f2591276bacf4409eba4a627cff11}
+      \strng{authorfullhashraw}{602f2591276bacf4409eba4a627cff11}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{River mechanics}
-      \field{year}{2018}
+      \field{howpublished}{\url{https://www.openstreetmap.org/\#map=14/7.06192/-73.87713}}
+      \field{note}{Accessed: 2025-04-07}
+      \field{title}{OpenStreetMap - Magdalena Region near Latitude 7.06192, Longitude -73.87713}
+      \field{year}{2025}
     \endentry
-    \entry{kuleuven_river_image}{misc}{}{}
+    \entry{qgis2025}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=bc56b218c96f3953413c3547e3768cd3}{%
-           family={{KU Leuven Hydraulics Research}},
-           familyi={K\bibinitperiod}}}%
+        {{hash=87a6547ad0a49e77c9adf891d4365979}{%
+           family={{QGIS Development Team}},
+           familyi={Q\bibinitperiod}}}%
       }
-      \strng{namehash}{bc56b218c96f3953413c3547e3768cd3}
-      \strng{fullhash}{bc56b218c96f3953413c3547e3768cd3}
-      \strng{fullhashraw}{bc56b218c96f3953413c3547e3768cd3}
-      \strng{bibnamehash}{bc56b218c96f3953413c3547e3768cd3}
-      \strng{authorbibnamehash}{bc56b218c96f3953413c3547e3768cd3}
-      \strng{authornamehash}{bc56b218c96f3953413c3547e3768cd3}
-      \strng{authorfullhash}{bc56b218c96f3953413c3547e3768cd3}
-      \strng{authorfullhashraw}{bc56b218c96f3953413c3547e3768cd3}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \strng{namehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{fullhash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{fullhashraw}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{bibnamehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{authorbibnamehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{authornamehash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{authorfullhash}{87a6547ad0a49e77c9adf891d4365979}
+      \strng{authorfullhashraw}{87a6547ad0a49e77c9adf891d4365979}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Urban River Research}
-      \field{year}{n.d.}
-      \verb{urlraw}
-      \verb https://bwk.kuleuven.be/hydr/Research/urban-river/River
-      \endverb
-      \verb{url}
-      \verb https://bwk.kuleuven.be/hydr/Research/urban-river/River
-      \endverb
+      \field{howpublished}{\url{https://qgis.org/}}
+      \field{note}{Open Source Geospatial Foundation Project. Accessed: 2025-04-07}
+      \field{title}{QGIS Geographic Information System}
+      \field{year}{2025}
     \endentry
-    \entry{le2013introduction}{book}{}{}
+    \entry{waterwaymap2025}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=64b3c7afbf02cbf20c13d657980b22cd}{%
-           family={Le\bibnamedelima Méhauté},
-           familyi={L\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Bernard},
-           giveni={B\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer Science \& Business Media}%
-      }
-      \strng{namehash}{64b3c7afbf02cbf20c13d657980b22cd}
-      \strng{fullhash}{64b3c7afbf02cbf20c13d657980b22cd}
-      \strng{fullhashraw}{64b3c7afbf02cbf20c13d657980b22cd}
-      \strng{bibnamehash}{64b3c7afbf02cbf20c13d657980b22cd}
-      \strng{authorbibnamehash}{64b3c7afbf02cbf20c13d657980b22cd}
-      \strng{authornamehash}{64b3c7afbf02cbf20c13d657980b22cd}
-      \strng{authorfullhash}{64b3c7afbf02cbf20c13d657980b22cd}
-      \strng{authorfullhashraw}{64b3c7afbf02cbf20c13d657980b22cd}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{An introduction to hydrodynamics and water waves}
-      \field{year}{2013}
-    \endentry
-    \entry{el2012using}{inproceedings}{}{}
-      \name{author}{7}{}{%
-        {{hash=b767bd6b2e4f40aafdbb9c49c4aef7e5}{%
-           family={El-Sawah},
-           familyi={E\bibinithyphendelim S\bibinitperiod},
-           given={Sondoss},
-           giveni={S\bibinitperiod}}}%
-        {{hash=9dd88f11cb92118efcaac59254d5951f}{%
-           family={Haase},
-           familyi={H\bibinitperiod},
-           given={Dagmar},
-           giveni={D\bibinitperiod}}}%
-        {{hash=0433c177296602e8ea04d064b41561bb}{%
-           family={Van\bibnamedelima Delden},
-           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod},
-           given={Hedwig},
-           giveni={H\bibinitperiod}}}%
-        {{hash=c36b1b6fb9f496ef58e68f029e46e7d8}{%
-           family={Pierce},
-           familyi={P\bibinitperiod},
-           given={Suzanne},
-           giveni={S\bibinitperiod}}}%
-        {{hash=81207aa4c6ff36d7a7f1de3479e1ec05}{%
-           family={ElMahdi},
-           familyi={E\bibinitperiod},
-           given={Amgad},
-           giveni={A\bibinitperiod}}}%
-        {{hash=39d72be002aa00bf2ac144ea7e4d1991}{%
-           family={Voinov},
-           familyi={V\bibinitperiod},
-           given={A},
-           giveni={A\bibinitperiod}}}%
-        {{hash=812358182db820be48402e7cafa18810}{%
-           family={Jakeman},
-           familyi={J\bibinitperiod},
-           given={Anthony\bibnamedelima J},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{organization}{2}{%
-        {International Environmental Modelling}%
-        {Software Society (iEMSs)}%
-      }
-      \strng{namehash}{7838b2551a177089fe5e1ab8eac6d23d}
-      \strng{fullhash}{031df0b90edb0eb3c26a66a7eb258499}
-      \strng{fullhashraw}{031df0b90edb0eb3c26a66a7eb258499}
-      \strng{bibnamehash}{7838b2551a177089fe5e1ab8eac6d23d}
-      \strng{authorbibnamehash}{7838b2551a177089fe5e1ab8eac6d23d}
-      \strng{authornamehash}{7838b2551a177089fe5e1ab8eac6d23d}
-      \strng{authorfullhash}{031df0b90edb0eb3c26a66a7eb258499}
-      \strng{authorfullhashraw}{031df0b90edb0eb3c26a66a7eb258499}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{6th International Congress on Environmental Modelling and Software 2012: Managing Resources of a Limited Planet: Pathways and Visions under Uncertainty}
-      \field{title}{Using system dynamics for environmental modelling: Lessons learnt from six case studies}
-      \field{year}{2012}
-      \field{pages}{1367\bibrangedash 1374}
-      \range{pages}{8}
-    \endentry
-    \entry{steffler2002introduction}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=f7e66a70c32d787e19c2af200e33c39b}{%
-           family={Steffler},
-           familyi={S\bibinitperiod},
-           given={Peter},
-           giveni={P\bibinitperiod}}}%
-        {{hash=cad12adaf3e5bb5d0f525266116de026}{%
-           family={Blackburn},
-           familyi={B\bibinitperiod},
-           given={Julia},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{23490f50d1ebfbcda187cc815d26f0f5}
-      \strng{fullhash}{23490f50d1ebfbcda187cc815d26f0f5}
-      \strng{fullhashraw}{23490f50d1ebfbcda187cc815d26f0f5}
-      \strng{bibnamehash}{23490f50d1ebfbcda187cc815d26f0f5}
-      \strng{authorbibnamehash}{23490f50d1ebfbcda187cc815d26f0f5}
-      \strng{authornamehash}{23490f50d1ebfbcda187cc815d26f0f5}
-      \strng{authorfullhash}{23490f50d1ebfbcda187cc815d26f0f5}
-      \strng{authorfullhashraw}{23490f50d1ebfbcda187cc815d26f0f5}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{University of Alberta, Edmonton, Alta}
-      \field{title}{Introduction to depth averaged modeling and user's manual}
-      \field{year}{2002}
-    \endentry
-    \entry{waterwaymap}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=5e85c5daa9907a6b6abccb8682c24be2}{%
-           family={{Waterway Map Project}},
+        {{hash=1525dcbc7c92fcb2c0d34f900e119ff7}{%
+           family={{WaterwayMap contributors}},
            familyi={W\bibinitperiod}}}%
       }
-      \strng{namehash}{5e85c5daa9907a6b6abccb8682c24be2}
-      \strng{fullhash}{5e85c5daa9907a6b6abccb8682c24be2}
-      \strng{fullhashraw}{5e85c5daa9907a6b6abccb8682c24be2}
-      \strng{bibnamehash}{5e85c5daa9907a6b6abccb8682c24be2}
-      \strng{authorbibnamehash}{5e85c5daa9907a6b6abccb8682c24be2}
-      \strng{authornamehash}{5e85c5daa9907a6b6abccb8682c24be2}
-      \strng{authorfullhash}{5e85c5daa9907a6b6abccb8682c24be2}
-      \strng{authorfullhashraw}{5e85c5daa9907a6b6abccb8682c24be2}
+      \strng{namehash}{1525dcbc7c92fcb2c0d34f900e119ff7}
+      \strng{fullhash}{1525dcbc7c92fcb2c0d34f900e119ff7}
+      \strng{fullhashraw}{1525dcbc7c92fcb2c0d34f900e119ff7}
+      \strng{bibnamehash}{1525dcbc7c92fcb2c0d34f900e119ff7}
+      \strng{authorbibnamehash}{1525dcbc7c92fcb2c0d34f900e119ff7}
+      \strng{authornamehash}{1525dcbc7c92fcb2c0d34f900e119ff7}
+      \strng{authorfullhash}{1525dcbc7c92fcb2c0d34f900e119ff7}
+      \strng{authorfullhashraw}{1525dcbc7c92fcb2c0d34f900e119ff7}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Waterway Map}
-      \field{year}{n.d.}
-      \verb{urlraw}
-      \verb https://waterwaymap.org/#map=8/4.876/-73.791
-      \endverb
-      \verb{url}
-      \verb https://waterwaymap.org/#map=8/4.876/-73.791
-      \endverb
-    \endentry
-    \entry{wu2007computational}{book}{}{}
-      \name{author}{1}{}{%
-        {{hash=03317370a6052113c8f2c8a06e8aedc2}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Weiming},
-           giveni={W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Crc Press}%
-      }
-      \strng{namehash}{03317370a6052113c8f2c8a06e8aedc2}
-      \strng{fullhash}{03317370a6052113c8f2c8a06e8aedc2}
-      \strng{fullhashraw}{03317370a6052113c8f2c8a06e8aedc2}
-      \strng{bibnamehash}{03317370a6052113c8f2c8a06e8aedc2}
-      \strng{authorbibnamehash}{03317370a6052113c8f2c8a06e8aedc2}
-      \strng{authornamehash}{03317370a6052113c8f2c8a06e8aedc2}
-      \strng{authorfullhash}{03317370a6052113c8f2c8a06e8aedc2}
-      \strng{authorfullhashraw}{03317370a6052113c8f2c8a06e8aedc2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Computational river dynamics}
-      \field{year}{2007}
+      \field{howpublished}{\url{https://waterwaymap.org/\#map=14.19/7.06031/-73.87921}}
+      \field{note}{Accessed: 2025-04-07}
+      \field{title}{Waterway Map – Magdalena River Region (Latitude 7.06031, Longitude -73.87921)}
+      \field{year}{2025}
     \endentry
   \enddatalist
 \endrefsection
