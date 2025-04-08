@@ -8,6 +8,8 @@
     "deaton1999dynamic"
     "waterwaymap2025"
     "quickosm2025"
-    "qgis2025"))
+    "qgis2025"
+    "garcia2020mathematical"
+    "cormagdalena_niveles"))
  '(or :bibtex :latex))
 

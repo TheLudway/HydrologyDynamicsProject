@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025/Arch Linux)  (format=lualatex 2025.3.22)  7 APR 2025 18:16
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025/Arch Linux)  (format=lualatex 2025.3.22)  8 APR 2025 18:25
  restricted system commands enabled.
 **sample.tex
 (./sample.tex
@@ -1463,7 +1463,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/Figtree(0)/b/n on input line 38.
  (./sample.nav)
-<kthpq-files/figs/logo/logo-tadeo.png, id=25, 1165.35374pt x 749.80125pt>
+<kthpq-files/figs/logo/logo-tadeo.png, id=29, 1165.35374pt x 749.80125pt>
 File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
 <use kthpq-files/figs/logo/logo-tadeo.png>
 Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
@@ -1474,7 +1474,7 @@ File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
 Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
 ne 41.
 (luatex.def)             Requested size: 227.62204pt x 146.44519pt.
-<kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf, id=26, 813.0375pt 
+<kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf, id=30, 813.0375pt 
 x 813.0375pt>
 File: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf Graphic file (
 type pdf)
@@ -1530,44 +1530,44 @@ File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
 Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
 ne 163.
 (luatex.def)             Requested size: 48.36967pt x 31.1196pt.
-<img/OSM-1.png, id=58, 900.36375pt x 575.14874pt>
+<img/OSM-1.png, id=62, 900.36375pt x 575.14874pt>
 File: img/OSM-1.png Graphic file (type png)
 <use img/OSM-1.png>
 Package luatex.def Info: img/OSM-1.png  used on input line 163.
 (luatex.def)             Requested size: 329.10356pt x 210.23032pt.
-<img/Waterway.png, id=60, 1183.42125pt x 813.0375pt>
+<img/Waterway.png, id=64, 1183.42125pt x 813.0375pt>
 File: img/Waterway.png Graphic file (type png)
 <use img/Waterway.png>
 Package luatex.def Info: img/Waterway.png  used on input line 163.
 (luatex.def)             Requested size: 329.10356pt x 226.0982pt.
-<img/QGIS-5.png, id=62, 1897.0875pt x 1135.24126pt>
+<img/QGIS-5.png, id=66, 1897.0875pt x 1135.24126pt>
 File: img/QGIS-5.png Graphic file (type png)
 <use img/QGIS-5.png>
 Package luatex.def Info: img/QGIS-5.png  used on input line 163.
 (luatex.def)             Requested size: 329.10356pt x 196.93796pt.
-<img/QGIS-1.png, id=64, 1894.07625pt x 1135.24126pt>
+<img/QGIS-1.png, id=68, 1894.07625pt x 1135.24126pt>
 File: img/QGIS-1.png Graphic file (type png)
 <use img/QGIS-1.png>
 Package luatex.def Info: img/QGIS-1.png  used on input line 163.
 (luatex.def)             Requested size: 362.01593pt x 216.97993pt.
-<img/QGIS-2.png, id=67, 1897.0875pt x 1135.24126pt>
+<img/QGIS-2.png, id=71, 1897.0875pt x 1135.24126pt>
 File: img/QGIS-2.png Graphic file (type png)
 <use img/QGIS-2.png>
 Package luatex.def Info: img/QGIS-2.png  used on input line 163.
 (luatex.def)             Requested size: 368.59578pt x 220.56566pt.
 LaTeX Font Info:    Font shape `TU/BitstreamVeraSansMono(0)/m/n' will be
 (Font)              scaled to size 15.55188pt on input line 163.
-<img/QGIS-3.png, id=68, 1897.0875pt x 1135.24126pt>
+<img/QGIS-3.png, id=72, 1897.0875pt x 1135.24126pt>
 File: img/QGIS-3.png Graphic file (type png)
 <use img/QGIS-3.png>
 Package luatex.def Info: img/QGIS-3.png  used on input line 163.
 (luatex.def)             Requested size: 368.59578pt x 220.56566pt.
-<img/QGIS-4.png, id=69, 1913.1475pt x 1150.2975pt>
+<img/QGIS-4.png, id=73, 1913.1475pt x 1150.2975pt>
 File: img/QGIS-4.png Graphic file (type png)
 <use img/QGIS-4.png>
 Package luatex.def Info: img/QGIS-4.png  used on input line 163.
 (luatex.def)             Requested size: 368.59578pt x 221.61285pt.
-<img/QGIS-6.png, id=70, 1927.2pt x 1204.5pt>
+<img/QGIS-6.png, id=74, 1927.2pt x 1204.5pt>
 File: img/QGIS-6.png Graphic file (type png)
 <use img/QGIS-6.png>
 Package luatex.def Info: img/QGIS-6.png  used on input line 163.
@@ -1667,19 +1667,19 @@ ne 163.
 File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
 <use kthpq-files/figs/logo/logo-tadeo.png>
 Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
-ne 187.
+ne 185.
 (luatex.def)             Requested size: 48.36967pt x 31.1196pt.
-<img/QGIS-7.png, id=135, 1024.82875pt x 939.51pt>
+<img/QGIS-7.png, id=139, 1024.82875pt x 939.51pt>
 File: img/QGIS-7.png Graphic file (type png)
 <use img/QGIS-7.png>
-Package luatex.def Info: img/QGIS-7.png  used on input line 187.
+Package luatex.def Info: img/QGIS-7.png  used on input line 185.
 (luatex.def)             Requested size: 230.37149pt x 211.19426pt.
 
 
 File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
 <use kthpq-files/figs/logo/logo-tadeo.png>
 Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
-ne 187.
+ne 185.
 (luatex.def)             Requested size: 48.36967pt x 31.1196pt.
 [12
 
@@ -1687,64 +1687,195 @@ ne 187.
 File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
 <use kthpq-files/figs/logo/logo-tadeo.png>
 Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
-ne 194.
+ne 207.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+<img/Paper.png, id=148, 1205.50375pt x 362.35374pt>
+File: img/Paper.png Graphic file (type png)
+<use img/Paper.png>
+Package luatex.def Info: img/Paper.png  used on input line 207.
+(luatex.def)             Requested size: 460.74298pt x 138.48651pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 207.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[13
+
+<./img/Paper.png>]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 230.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+<img/Barran.png, id=160, 1822.81pt x 850.17625pt>
+File: img/Barran.png Graphic file (type png)
+<use img/Barran.png>
+Package luatex.def Info: img/Barran.png  used on input line 230.
+(luatex.def)             Requested size: 460.74298pt x 214.89159pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 230.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[14
+
+<./img/Barran.png>]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 235.
 (luatex.def)             Requested size: 68.2866pt x 43.93355pt.
 File: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf Graphic file (
 type pdf)
 <use kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf>
 Package luatex.def Info: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1
-.pdf  used on input line 194.
+.pdf  used on input line 235.
 (luatex.def)             Requested size: 813.03552pt x 813.03552pt.
 
 
-[13
-
-]
-File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
-<use kthpq-files/figs/logo/logo-tadeo.png>
-Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
-ne 197.
-(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
-
-
-File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
-<use kthpq-files/figs/logo/logo-tadeo.png>
-Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
-ne 197.
-(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
-[14
-
-]
-
-File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
-<use kthpq-files/figs/logo/logo-tadeo.png>
-Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
-ne 197.
-(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
 [15
 
+]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 250.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 250.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[16
 
 ]
 File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
 <use kthpq-files/figs/logo/logo-tadeo.png>
 Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
-ne 200.
+ne 279.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 279.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[17
+
+]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 293.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 293.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[18
+
+]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 308.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 308.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[19
+
+]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 321.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 321.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[20
+
+]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 330.
+(luatex.def)             Requested size: 68.2866pt x 43.93355pt.
+File: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf Graphic file (
+type pdf)
+<use kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf>
+Package luatex.def Info: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1
+.pdf  used on input line 330.
+(luatex.def)             Requested size: 813.03552pt x 813.03552pt.
+
+
+[21
+
+]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 333.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 333.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[22
+
+]
+
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 333.
+(luatex.def)             Requested size: 48.36967pt x 31.1196pt.
+[23
+
+
+]
+File: kthpq-files/figs/logo/logo-tadeo.png Graphic file (type png)
+<use kthpq-files/figs/logo/logo-tadeo.png>
+Package luatex.def Info: kthpq-files/figs/logo/logo-tadeo.png  used on input li
+ne 336.
 (luatex.def)             Requested size: 170.71652pt x 109.8339pt.
 File: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf Graphic file (
 type pdf)
 <use kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf>
 Package luatex.def Info: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1
-.pdf  used on input line 200.
+.pdf  used on input line 336.
 (luatex.def)             Requested size: 813.03552pt x 813.03552pt.
 File: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf Graphic file (
 type pdf)
 <use kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1.pdf>
 Package luatex.def Info: kthpq-files/figs/lines/Linjemonster_himmelsbla_RGB_1x1
-.pdf  used on input line 200.
+.pdf  used on input line 336.
 (luatex.def)             Requested size: 813.03552pt x 813.03552pt.
 
 
-[16
+[24
 
 ]
 \tf@nav=\write7
@@ -1766,33 +1897,35 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `sample.out' has not changed.
-(rerunfilecheck)             Checksum: 566382D22CB673936C990B11C5B19779;348.
+(rerunfilecheck)             Checksum: 9360C57BB493D42F0E2440265BAC0C14;482.
 Package logreq Info: Writing requests to 'sample.run.xml'.
 
 \openout1 = sample.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 42663 strings out of 475506
+ 42788 strings out of 475506
  100000,1977958 words of node,token memory allocated
- 3780 words of node memory still in use:
-   91 hlist, 10 vlist, 13 rule, 3 disc, 6 local_par, 110 glue, 11 kern, 18 penal
-ty, 15 glyph, 326 attribute, 82 glue_spec, 165 attribute_list, 5 write, 1 save_p
+ 3792 words of node memory still in use:
+   91 hlist, 10 vlist, 13 rule, 3 disc, 6 local_par, 108 glue, 11 kern, 18 penal
+ty, 15 glyph, 335 attribute, 82 glue_spec, 169 attribute_list, 5 write, 1 save_p
 os, 37 pdf_literal, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 12 pdf_color
 stack, 4 pdf_setmatrix, 6 pdf_save, 6 pdf_restore nodes
-   avail lists: 1:3,2:1382,3:512,4:259,5:117,6:48,7:3232,8:55,9:416,10:56,11:263
+   avail lists: 1:3,2:1371,3:649,4:316,5:194,6:60,7:3929,8:81,9:649,10:56,11:332
 
- 64488 multiletter control sequences out of 65536+600000
- 163 fonts using 48982171 bytes
+ 64540 multiletter control sequences out of 65536+600000
+ 163 fonts using 48982419 bytes
  128i,15n,126p,696b,2938s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/fonts/TTF/VeraMono.ttf><./kthpq-files/fonts/Figtree/Figtree-Italic.o
-tf></usr/share/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></
-usr/share/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf><./kthp
-q-files/fonts/Figtree/Figtree-Regular.otf>
-Output written on sample.pdf (16 pages, 4555233 bytes).
+</usr/share/texmf-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr
+/share/fonts/TTF/arial.ttf></usr/share/fonts/TTF/ariali.ttf></usr/share/fonts/TT
+F/VeraMono.ttf><./kthpq-files/fonts/Figtree/Figtree-Italic.otf></usr/share/texmf
+-dist/fonts/opentype/public/firamath/FiraMath-Regular.otf></usr/share/texmf-dist
+/fonts/opentype/public/firamath/FiraMath-Regular.otf><./kthpq-files/fonts/Figtre
+e/Figtree-Regular.otf>
+Output written on sample.pdf (24 pages, 4902712 bytes).
 
-PDF statistics: 213 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 131072)
- 40 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 313 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 131072)
+ 48 words of extra memory for PDF output out of 10000 (max. 100000000)
 

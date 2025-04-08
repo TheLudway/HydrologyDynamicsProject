@@ -42,6 +42,29 @@
       \field{title}{QuickOSM - QGIS plugin to download OSM data using Overpass API}
       \field{year}{2025}
     \endentry
+    \entry{cormagdalena_niveles}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=224ed232d05417948c4891add4f83f17}{%
+           family={{Cormagdalena}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{224ed232d05417948c4891add4f83f17}
+      \strng{fullhash}{224ed232d05417948c4891add4f83f17}
+      \strng{fullhashraw}{224ed232d05417948c4891add4f83f17}
+      \strng{bibnamehash}{224ed232d05417948c4891add4f83f17}
+      \strng{authorbibnamehash}{224ed232d05417948c4891add4f83f17}
+      \strng{authornamehash}{224ed232d05417948c4891add4f83f17}
+      \strng{authorfullhash}{224ed232d05417948c4891add4f83f17}
+      \strng{authorfullhashraw}{224ed232d05417948c4891add4f83f17}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://niveles.cormagdalena.gov.co/}}
+      \field{note}{Accedido el 30 de marzo de 2025}
+      \field{title}{Sistema de Información de Niveles del Río Magdalena}
+      \field{year}{2025}
+    \endentry
     \entry{deaton1999dynamic}{book}{}{}
       \name{author}{2}{}{%
         {{hash=c9955100503098e0dbc73e0bf49f0de5}{%
@@ -72,6 +95,39 @@
       \field{labeltitlesource}{title}
       \field{title}{Dynamic modeling of environmental systems}
       \field{year}{1999}
+    \endentry
+    \entry{garcia2020mathematical}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=764ac58c3d50dfc32d12c05b6ee02982}{%
+           family={García\bibnamedelima Rodríguez},
+           familyi={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Fabián},
+           giveni={F\bibinitperiod}}}%
+        {{hash=798d4ba756ef1cfd90873c24e642a5dd}{%
+           family={González\bibnamedelima Carreño},
+           familyi={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Javier\bibnamedelima Orlando},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universidad Francisco de Paula Santander}%
+      }
+      \strng{namehash}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \strng{fullhash}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \strng{fullhashraw}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \strng{bibnamehash}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \strng{authorbibnamehash}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \strng{authornamehash}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \strng{authorfullhash}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \strng{authorfullhashraw}{ffcb0c9227e3f4e5917d5947e9c8fadf}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://repositorio.ufps.edu.co/handle/ufps/1120}}
+      \field{note}{Accessed: 2025-03-30}
+      \field{title}{A mathematical model for the simulation of the Magdalena River in the city of Barrancabermeja, Colombia}
+      \field{year}{2020}
     \endentry
     \entry{openstreetmap_magdalena2025}{misc}{}{}
       \name{author}{1}{}{%

@@ -182,9 +182,145 @@
     \end{column}
   \end{columns}
 
+\end{frame}
 
+\begin{frame}
+  \frametitle{Coeficiente de rugosidad y pendientes}
+
+  \begin{columns}
+    \begin{column}{.3\textwidth}
+      \begin{itemize}
+        \item Coeficiente de Mannig: $0.018$
+        \item Pendiente del río: $0.07\%$
+      \end{itemize}
+    \end{column}
+
+    \begin{column}{.7\textwidth}
+      \begin{figure}[ht]
+        \centering
+        \includegraphics[width=1\textwidth]{img/Paper.png}
+        \caption{\textit{A mathematical model for the simulation of the Magdalena River in the city of Barrancabermeja, Colombia}\cite{garcia2020mathematical}.}
+      \end{figure}
+    \end{column}
+  \end{columns}
 
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Elevación del río}
+
+  \begin{columns}
+    \begin{column}{.3\textwidth}
+      \begin{itemize}
+        \item Script en \textit{Python} utilizando web scrapping con BeautifulSoup
+        \item Datos desordenados.
+      \end{itemize}
+    \end{column}
+
+    \begin{column}{.7\textwidth}
+      \begin{figure}[ht]
+        \centering
+        \includegraphics[width=1\textwidth]{img/Barran.png}
+        \caption{Datos de CORMAGDALENA\cite{cormagdalena_niveles}}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+
+\section{Modelo matemático}
+
+\insertsectionpage
+
+\begin{frame}
+  \frametitle{Ecuaciones de Saint-Venant - Ecuación de continuidad}
+  \[
+    \frac{\partial s_{c} (A + A_{0})}{\partial t} + \frac{\partial Q}{\partial x} - q_{L} = 0
+  \]
+  \begin{itemize}
+    \item $s_{c}$ es el coeficiente de sinuosidad.
+    \item $A$ es el área.
+    \item $t$ es el tiempo.
+    \item $Q$ es el cauldal.
+    \item $x$ es la distancia del río.
+    \item $q_{L}$ es el flujo lateral.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Ecuaciones de Saint-Venant - Ecuación de continuidad}
+  \[
+  \frac{\partial S_{m}Q}{\partial t} + \frac{\partial (\beta Q^{2} / A) }{\partial x} + g A \left(\frac{\partial h_{r}}{\partial x} + S_{f} + S_{ec}  \right) + M_{L} = 0
+  \]
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item $S_{m}$ es el factor de sinuosidad.
+        \item $Q$ es el caudal.
+        \item $t$ es el tiempo.
+        \item $\beta$ es el coeficiente del momentum para la distribución de la velocidad.
+        \item $A$ es el área.
+        \item $x$ es la distancia del río.
+      \end{itemize}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item $g$ es la aceleración de la gravedad.
+        \item $h_{r}$ es la altura del río.
+        \item $S_{f}$ es la fricción de la pendiente.
+        \item $S_{ec}$ es la pérdida por fricción.
+        \item $M_{L}$ es el flujo del momento en los bordes.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Método de diferencias finitas - Ecuación de continuidad}
+
+  \begin{align*}
+  &\frac{\partial s_{c} (A + A_{0})}{\partial t} + \frac{\partial Q}{\partial x} - q_{L} = 0 \\
+  &\frac{s_{c} (A + A_{0})_{i}^{j+1} - s_{c}(A + A_{0})_{i}^{j} }{\Delta t} + \frac{Q_{i}^{j} - Q_{i-1}^{j} }{\Delta x} - q_{Li}^{j} = 0   
+\end{align*}
+
+  \[
+  A_{i}^{j+1} = \frac{\left(q_{Li}^{j} - \frac{Q_{i}^{j} - Q_{i-1}^{j} }{\Delta x}  \right) \Delta t + s_{c} (A + A_{0})_{i}^{j}}{s_{c}} - (A_{0})_{i}^{j+1}
+  \]
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Método de diferencias finitas - Ecuación de momentum}
+
+  \begin{align*}
+  \frac{s_{m} (Q)_{i}^{j+1} - s_{m}(Q)_{i}^{j} }{\Delta t} + \frac{(\beta Q^{2}/A)_{i}^{j} - (\beta Q^{2} /A)_{i-1}^{j} }{\Delta x} + gA \left( \frac{(h_{r})_{i}^{j} - (h_{r})_{i-1}^{j}}{\Delta x} + S_{f} + S_{ec}   \right) + M_{L} = 0   
+\end{align*}
+
+  \[
+  Q_{i}^{j+1} = \frac{\left[ -M_{L} - g(A_{i}^{j}) \left(\frac{\left(\frac{A}{W}\right)_{i}^{j} - \left(\frac{A}{W}\right)_{i-1}^{j} }{\Delta x} + S_{t} + S_{a}  \right) - \frac{ \left( \frac{\beta Q^{2}}{A} \right)_{i}^{j} - \left( \frac{\beta Q^{2}}{A} \right)_{i-1}^{j}  }{\Delta x}           \right] \Delta t + S_{m} (Q)_{i}^{j}}{s_{m}}
+  \]
+  
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Más modelos}
+
+  \begin{itemize}
+    \item Preissman por 4 puntos.
+    \item Método de características.
+    \item Método de elementos finitos.
+    \item Las ecuaciones no tienen solución analítica (excepto en algunos casos).\cite{deaton1999dynamic}
+  \end{itemize}
+  
+\end{frame}
+   
+
 
 
 
