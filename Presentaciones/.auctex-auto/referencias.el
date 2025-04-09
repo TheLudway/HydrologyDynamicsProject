@@ -10,6 +10,7 @@
     "quickosm2025"
     "qgis2025"
     "garcia2020mathematical"
-    "cormagdalena_niveles"))
+    "cormagdalena_niveles"
+    "grdc_data_portal"))
  '(or :bibtex :latex))
 

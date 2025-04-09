@@ -129,6 +129,37 @@
       \field{title}{A mathematical model for the simulation of the Magdalena River in the city of Barrancabermeja, Colombia}
       \field{year}{2020}
     \endentry
+    \entry{grdc_data_portal}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0b6f564ce213dbb37a42b054bebf93ab}{%
+           family={{Global Runoff Data Centre (GRDC)}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Federal Institute of Hydrology (BfG), Koblenz, Germany}%
+      }
+      \strng{namehash}{0b6f564ce213dbb37a42b054bebf93ab}
+      \strng{fullhash}{0b6f564ce213dbb37a42b054bebf93ab}
+      \strng{fullhashraw}{0b6f564ce213dbb37a42b054bebf93ab}
+      \strng{bibnamehash}{0b6f564ce213dbb37a42b054bebf93ab}
+      \strng{authorbibnamehash}{0b6f564ce213dbb37a42b054bebf93ab}
+      \strng{authornamehash}{0b6f564ce213dbb37a42b054bebf93ab}
+      \strng{authorfullhash}{0b6f564ce213dbb37a42b054bebf93ab}
+      \strng{authorfullhashraw}{0b6f564ce213dbb37a42b054bebf93ab}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-03-30}
+      \field{title}{GRDC Data Portal – Subregion Download}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://portal.grdc.bafg.de/applications/public.html?publicuser=PublicUser#dataDownload/Subregions
+      \endverb
+      \verb{url}
+      \verb https://portal.grdc.bafg.de/applications/public.html?publicuser=PublicUser#dataDownload/Subregions
+      \endverb
+    \endentry
     \entry{openstreetmap_magdalena2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=602f2591276bacf4409eba4a627cff11}{%

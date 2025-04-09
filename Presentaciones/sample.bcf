@@ -2382,7 +2382,9 @@
     <bcf:citekey order="7" intorder="1">garcia2020mathematical</bcf:citekey>
     <bcf:citekey order="8" intorder="1">garcia2020mathematical</bcf:citekey>
     <bcf:citekey order="9" intorder="1">cormagdalena_niveles</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">deaton1999dynamic</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">grdc_data_portal</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">grdc_data_portal</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">deaton1999dynamic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
