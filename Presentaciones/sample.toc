@@ -1,4 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\beamer@sectionintoc {1}{Exploración de datos}{2}{0}{1}
-\beamer@sectionintoc {2}{Modelo matemático}{16}{0}{2}
-\beamer@sectionintoc {3}{Referencias}{23}{0}{3}
