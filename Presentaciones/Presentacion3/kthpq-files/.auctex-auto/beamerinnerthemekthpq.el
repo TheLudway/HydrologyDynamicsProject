@@ -4,11 +4,12 @@
  "beamerinnerthemekthpq"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
-                     '(("tikz" "") ("graphicx" "") ("adjustbox" "")))
+                     '(("tikz" "") ("graphicx" "") ("adjustbox" "") ("ccicons" "")))
    (TeX-run-style-hooks
     "tikz"
     "graphicx"
-    "adjustbox")
+    "adjustbox"
+    "ccicons")
    (TeX-add-symbols
     "insertendpage"
     "titlelogofilename"

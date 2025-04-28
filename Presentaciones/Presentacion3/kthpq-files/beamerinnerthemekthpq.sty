@@ -7,6 +7,7 @@
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
 \RequirePackage{adjustbox}
+\RequirePackage{ccicons}
 
 \graphicspath{ {kthpq-files/figs/} }
 
@@ -72,7 +73,7 @@
 \donotcoloroutermaths
 \let\linesfilename\titlelinesfilename
 \begin{tikzpicture}[remember picture, overlay]
-\node[anchor = north, inner sep = 22mm] at (current page.north) {\includegraphics[width=80mm]{\titlelogofilename}};
+\node[anchor = north, inner sep = 22mm] at (current page.north) {\includegraphics[width=70mm]{\titlelogofilename}};
 \node[anchor = north west, inner sep=0pt] at (current page.north west) {\linesnorthwest};
 \node[anchor = south east, inner sep=0pt] at (current page.south east) {\linessoutheastii};% Hard coded south east lines
 \end{tikzpicture}%
@@ -115,7 +116,7 @@
 \begin{frame}[b]
 \let\linesfilename\endtitlelinesfilename
 \begin{tikzpicture}[remember picture, overlay]
-\node[anchor = center] at (current page.center) {\includegraphics[width=150mm]{logo/by-sa.png}};
+\node[anchor = center] at (current page.center) {\href{https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1}{\textcolor{white}{\ccbyncsa}}};
 \node[anchor = north west, inner sep=0pt] at (current page.north west) {\linesnorthwest};
 \node[anchor = south east, inner sep=0pt] at (current page.south east) {\linessoutheastii};% Hard coded south east lines
 \end{tikzpicture}%

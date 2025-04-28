@@ -17,3 +17,4 @@ htmlcov
 *.run.xml
 *.toc
 *.synctex.gz
+*.blg

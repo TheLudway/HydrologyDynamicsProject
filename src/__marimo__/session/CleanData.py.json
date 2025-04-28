@@ -18,7 +18,7 @@
       "console": []
     },
     {
-      "id": "nyyh",
+      "id": "MJUe",
       "code_hash": "4af517ef739f700432dc8122b81bb1e4",
       "outputs": [
         {
@@ -31,65 +31,175 @@
       "console": []
     },
     {
-      "id": "XbgU",
-      "code_hash": "99a76e0149334c00b0c30a1ca909e593",
+      "id": "vblA",
+      "code_hash": "e94a67dd57f8fe6fb88ad32d0f09f77d",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"limpieza-de-datos\">Limpieza de Datos</h1></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "nOEB",
-      "code_hash": "e6e736a1e1563219dc0be6fb57728841",
+      "id": "bkHC",
+      "code_hash": "2a2205b8195d884cf5c9f0c7356a6e1d",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='nOEB-0' random-id='9a032f81-4a4a-77ce-ce1c-deff2b3ecb06'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/589-111038-l8rTD7DS.json&quot;' data-total-rows='223' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Value (m)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='576f4dd4-2446-e6ed-4890-8f6ebc7cadaa'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/331-1179989-7aSVKdsI.json&quot;' data-total-rows='1800' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Value&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "APcZ",
-      "code_hash": null,
+      "id": "lEQa",
+      "code_hash": "184df8ae326d998fba379087ac841f25",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/plain": ""
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='2d9af7f0-6ba8-8e87-a62f-3cec96741a66'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/589-1179989-nhW8ujqZ.json&quot;' data-total-rows='223' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Value (m)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "BPkS",
-      "code_hash": "4f1e33957e82bfaf1a14cf5f9f5ba949",
+      "id": "PKri",
+      "code_hash": "c4d2e165aa919d4b8d37b4c216cde458",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"limpieza-de-datos\">Limpieza de Datos</h1>\n<span class=\"paragraph\">Despu\u00e9s de hacer web scrapping, los datos de las fechas quedan muy desordenados.</span></span>"
+            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='b706b95e-5307-932a-25b1-994a5cb9a317'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/671-1179989-jXAct6qD.json&quot;' data-total-rows='32242' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Value (m&#92;u00b3/s)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
-      "console": []
+      "console": [
+        {
+          "type": "stream",
+          "name": "stderr",
+          "text": "/home/marie/Repos/todo-mio/UTADEO/7\u00b0 SEMESTRE/SISTEMAS DIN\u00c1MICOS/Proyecto/src/.venv/lib/python3.13/site-packages/narwhals/translate.py:922: UserWarning: Discarding nonzero nanoseconds in conversion.\n  return scalar_like.to_pydatetime()\n"
+        }
+      ]
     },
     {
-      "id": "Gcqc",
+      "id": "Xref",
       "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
       "outputs": [
         {
           "type": "data",
           "data": {
             "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "oycj",
+      "code_hash": "37c036d717f9f91a3c88bd76d50526c5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uFgB",
+      "code_hash": "bccd56dc908e228b240f93e10782b847",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"filtrar-datos\">Filtrar datos</h1>\n<span class=\"paragraph\">Debido a que los datos del caudal y de la elevaci\u00f3n del r\u00edo son diferentes en las fechas. Se va a filtrar un per\u00edodo que tenga una variabilidad clim\u00e1tica similar. Se fija entonces un intervalo desde octubre de 2017 a mayo de 2018 para los datos del caudal y un intervalo desde septiembre de 2024 a abril de 2025. </span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "dEjv",
+      "code_hash": "408f88dac91dbb0e95392b63c32c0d10",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><span class=\"paragraph\">Se tienen en total 1800 filas de datos, sin embargo, no se repiten 223, por lo tanto, en la siguiente celda se eliminan los duplicados y se renombra la columna \"Value\" a \"Value (m)\".</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "ezvl",
+      "code_hash": "61f3c2c35ae12054672f5250e9caff4e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h2 id=\"elevacion-del-rio\">Elevaci\u00f3n del r\u00edo</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Cgyd",
+      "code_hash": "92270cbc100ab2a6e45821bd454395cf",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h2 id=\"caudal-del-rio\">Caudal del r\u00edo</h2>\n<span class=\"paragraph\">Despu\u00e9s de realizar la limpieza de la meta-data utilizando comandos de UNIX, ahora se va a pasar a un formato de tablas para que pueda ser mejor procesador por Python y Pandas. Por \u00faltimo, se limpia de los valores nulos el dataset, y se renombra la columna a Value (m\u00b3/s).</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "DuKr",
+      "code_hash": "ad3d4fbdd9241eb043b5de565a54f0cd",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "zRtX",
+      "code_hash": "9e2b6530fdd99b4e0464a39c40d55523",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='zRtX-0' random-id='54e73fac-e5dd-5102-1e42-0bdab093abea'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/651-1179989-hm6dvKGw.json&quot;' data-total-rows='223' data-total-columns='1' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Caudal (m&#92;u00b3/s)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;Date&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "sgtI",
+      "code_hash": "f2ad6a349daca1acf9e3aac520fe6a3a",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='sgtI-0' random-id='5da8f42e-0b3f-f797-ad80-00dfa19d3d67'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/559-1179989-KgN9Rofv.json&quot;' data-total-rows='223' data-total-columns='1' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Elevation (m)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;Date&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
           }
         }
       ],
