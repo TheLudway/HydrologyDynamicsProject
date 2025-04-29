@@ -86,7 +86,7 @@ def _(mo):
         r"""
         # Filtrar datos
 
-        Debido a que los datos del caudal y de la elevación del río son diferentes en las fechas. Se va a filtrar un período que tenga una variabilidad climática similar. Se fija entonces un intervalo desde octubre de 2017 a mayo de 2018 para los datos del caudal y un intervalo desde septiembre de 2024 a abril de 2025. 
+        Debido a que los datos del caudal y de la elevación del río son diferentes en las fechas. Se va a filtrar un período que tenga una variabilidad climática similar. Se fija entonces un intervalo desde octubre de 2017 a mayo de 2018 para los datos del caudal y un intervalo desde septiembre de 2024 a abril de 2025.
         """
     )
     return
