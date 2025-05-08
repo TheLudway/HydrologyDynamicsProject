@@ -32,7 +32,7 @@
     },
     {
       "id": "vblA",
-      "code_hash": "e94a67dd57f8fe6fb88ad32d0f09f77d",
+      "code_hash": "73110489e924d44813859d69edff68b0",
       "outputs": [
         {
           "type": "data",
@@ -45,103 +45,6 @@
     },
     {
       "id": "bkHC",
-      "code_hash": "2a2205b8195d884cf5c9f0c7356a6e1d",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='576f4dd4-2446-e6ed-4890-8f6ebc7cadaa'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/331-1179989-7aSVKdsI.json&quot;' data-total-rows='1800' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Value&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "lEQa",
-      "code_hash": "184df8ae326d998fba379087ac841f25",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='2d9af7f0-6ba8-8e87-a62f-3cec96741a66'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/589-1179989-nhW8ujqZ.json&quot;' data-total-rows='223' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Value (m)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "PKri",
-      "code_hash": "c4d2e165aa919d4b8d37b4c216cde458",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='PKri-0' random-id='b706b95e-5307-932a-25b1-994a5cb9a317'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/671-1179989-jXAct6qD.json&quot;' data-total-rows='32242' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Value (m&#92;u00b3/s)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
-          }
-        }
-      ],
-      "console": [
-        {
-          "type": "stream",
-          "name": "stderr",
-          "text": "/home/marie/Repos/todo-mio/UTADEO/7\u00b0 SEMESTRE/SISTEMAS DIN\u00c1MICOS/Proyecto/src/.venv/lib/python3.13/site-packages/narwhals/translate.py:922: UserWarning: Discarding nonzero nanoseconds in conversion.\n  return scalar_like.to_pydatetime()\n"
-        }
-      ]
-    },
-    {
-      "id": "Xref",
-      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "oycj",
-      "code_hash": "37c036d717f9f91a3c88bd76d50526c5",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/plain": ""
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "uFgB",
-      "code_hash": "bccd56dc908e228b240f93e10782b847",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"filtrar-datos\">Filtrar datos</h1>\n<span class=\"paragraph\">Debido a que los datos del caudal y de la elevaci\u00f3n del r\u00edo son diferentes en las fechas. Se va a filtrar un per\u00edodo que tenga una variabilidad clim\u00e1tica similar. Se fija entonces un intervalo desde octubre de 2017 a mayo de 2018 para los datos del caudal y un intervalo desde septiembre de 2024 a abril de 2025. </span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "dEjv",
-      "code_hash": "408f88dac91dbb0e95392b63c32c0d10",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<span class=\"markdown prose dark:prose-invert\"><span class=\"paragraph\">Se tienen en total 1800 filas de datos, sin embargo, no se repiten 223, por lo tanto, en la siguiente celda se eliminan los duplicados y se renombra la columna \"Value\" a \"Value (m)\".</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "ezvl",
       "code_hash": "61f3c2c35ae12054672f5250e9caff4e",
       "outputs": [
         {
@@ -154,7 +57,46 @@
       "console": []
     },
     {
-      "id": "Cgyd",
+      "id": "lEQa",
+      "code_hash": "2a2205b8195d884cf5c9f0c7356a6e1d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='97805924-8671-46db-1644-650166e42d74'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/331-1357520-CYDyAq4s.json&quot;' data-total-rows='1800' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;string&quot;, &quot;object&quot;]], [&quot;Value&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "408f88dac91dbb0e95392b63c32c0d10",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><span class=\"paragraph\">Se tienen en total 1800 filas de datos, sin embargo, no se repiten 223, por lo tanto, en la siguiente celda se eliminan los duplicados y se renombra la columna \"Value\" a \"Value (m)\".</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "184df8ae326d998fba379087ac841f25",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Xref-0' random-id='d126c7d4-d55e-303c-7626-6d57f2c89163'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/589-1357520-xkUC86JL.json&quot;' data-total-rows='223' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Value (m)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
       "code_hash": "92270cbc100ab2a6e45821bd454395cf",
       "outputs": [
         {
@@ -167,8 +109,8 @@
       "console": []
     },
     {
-      "id": "DuKr",
-      "code_hash": "ad3d4fbdd9241eb043b5de565a54f0cd",
+      "id": "BYtC",
+      "code_hash": "37c036d717f9f91a3c88bd76d50526c5",
       "outputs": [
         {
           "type": "data",
@@ -180,26 +122,65 @@
       "console": []
     },
     {
-      "id": "zRtX",
-      "code_hash": "9e2b6530fdd99b4e0464a39c40d55523",
+      "id": "RGSE",
+      "code_hash": "e40970fa98d989509a4ffc3d79cf5ad5",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='zRtX-0' random-id='54e73fac-e5dd-5102-1e42-0bdab093abea'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/651-1179989-hm6dvKGw.json&quot;' data-total-rows='223' data-total-columns='1' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Caudal (m&#92;u00b3/s)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;Date&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/html": "<span class=\"markdown prose dark:prose-invert\"><h1 id=\"filtrar-datos\">Filtrar datos</h1>\n<span class=\"paragraph\">Debido a que los datos del caudal y de la elevaci\u00f3n del r\u00edo son diferentes en las fechas. Se va a filtrar un per\u00edodo que tenga una variabilidad clim\u00e1tica similar. Se fija entonces un intervalo desde octubre de 2017 a mayo de 2018 para los datos del caudal y un intervalo desde septiembre de 2024 a abril de 2025.</span></span>"
           }
         }
       ],
       "console": []
     },
     {
-      "id": "sgtI",
-      "code_hash": "f2ad6a349daca1acf9e3aac520fe6a3a",
+      "id": "Kclp",
+      "code_hash": null,
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='sgtI-0' random-id='5da8f42e-0b3f-f797-ad80-00dfa19d3d67'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/559-1179989-KgN9Rofv.json&quot;' data-total-rows='223' data-total-columns='1' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Elevation (m)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;Date&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "emfo",
+      "code_hash": "eb0259ae385a94aae129723e7e1f0084",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='emfo-0' random-id='83f8280f-8b86-8d8c-fa85-db24ea3000f5'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/741-1357520-fKMF1uhK.json&quot;' data-total-rows='223' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Caudal (m&#92;u00b3/s)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hstk",
+      "code_hash": "69e46b462b5eda09da166f6216b44ebb",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='Hstk-0' random-id='dbd18e6b-bd13-5b8a-a521-973bae037966'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;./@file/629-1357520-VrARFcDP.json&quot;' data-total-rows='223' data-total-columns='2' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Date&quot;, [&quot;datetime&quot;, &quot;datetime64[ns]&quot;]], [&quot;Elevation (m)&quot;, [&quot;number&quot;, &quot;float64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-column-summaries='true' data-row-headers='[&quot;&quot;]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nWHF",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
           }
         }
       ],

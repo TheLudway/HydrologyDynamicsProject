@@ -6,7 +6,7 @@ __generated_with = "0.13.2"
 app = marimo.App(width="medium")
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _():
     return
 
@@ -92,24 +92,18 @@ def _(mo):
     return
 
 
-@app.cell
+@app.cell(hide_code=True)
 def _(df_caudal_clean):
-    df_caudal_clean.set_index("Date", inplace=True)
+    df_caudal_filter = df_caudal_clean.rename(columns={"Value (m³/s)":"Caudal (m³/s)"})
+    df_caudal_obj = df_caudal_filter.loc[(df_caudal_filter['Date'] > '2017-10-01') & (df_caudal_filter['Date'] <= '2018-05-12')]
+    df_caudal_obj 
     return
 
 
-@app.cell
-def _(df_caudal_clean):
-    df_caudal_filter = df_caudal_clean.rename(columns={"Value (m³/s)":"Caudal (m³/s)"}).loc["2017-10-01":"2018-05-11"]
-    df_caudal_filter
-    return
-
-
-@app.cell
+@app.cell(hide_code=True)
 def _(df_no_duplicates):
-    df_elevation = df_no_duplicates.set_index("Date")
-    df_elevation.rename(columns={"Value (m)":"Elevation (m)"}, inplace=True)
-    df_elevation
+    df_no_duplicates.rename(columns={"Value (m)":"Elevation (m)"}, inplace=True)
+    df_no_duplicates
     return
 
 
