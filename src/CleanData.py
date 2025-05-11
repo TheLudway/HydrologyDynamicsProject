@@ -97,13 +97,20 @@ def _(df_caudal_clean):
     df_caudal_filter = df_caudal_clean.rename(columns={"Value (m³/s)":"Caudal (m³/s)"})
     df_caudal_obj = df_caudal_filter.loc[(df_caudal_filter['Date'] > '2017-10-01') & (df_caudal_filter['Date'] <= '2018-05-12')]
     df_caudal_obj 
-    return
+    return (df_caudal_obj,)
 
 
-@app.cell(hide_code=True)
+@app.cell
 def _(df_no_duplicates):
     df_no_duplicates.rename(columns={"Value (m)":"Elevation (m)"}, inplace=True)
     df_no_duplicates
+    return
+
+
+@app.cell
+def _(df_caudal_obj, df_no_duplicates, pd):
+    df_final = pd.DataFrame({"Caudal (m³/s)":df_caudal_obj["Caudal (m³/s)"].reset_index(drop = True), "Elevation (m)":df_no_duplicates["Elevation (m)"].reset_index(drop = True)})
+    df_final
     return
 
 
