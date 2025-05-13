@@ -1,10 +1,18 @@
-#!./.venv/bin/python3 
+
+from fastapi import FastAPI
+from fastapi.responses import StreamingResponse
+from typing import Dict, Any
+import io
+import csv 
+import uvicorn 
 import numpy as np
-import random
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+import zipfile
+
+
+app = FastAPI()
 
 np.random.seed(42)
-
 # Load data
 data = np.genfromtxt('descarga-altura.csv', delimiter=',', skip_header=1)
 h_at_x0 = data[:, 1]  # h(0,t) for all t (shape: (nt,))
@@ -33,6 +41,7 @@ Q[:, 0] = Q_at_x0
 
 # Condición de downstream
 Q[:, -1] = np.random.normal(Q[:, 0].mean(), Q[:, 0].std(), Q[:, 0].size)
+
 
 def create_height(h, mean=h[:,0].mean(), std=h[:, 0].std()):
     """
@@ -173,14 +182,14 @@ def calculateDischarge(g, A, W, dx, dt, n, L, beta, Q_upstream, qL, u, sm=(1,1),
             A_im1 = max(A[k, i-1], 1e-3)
             
             # Momentum effect from lateral flow
-            ML = min(qL[k, i-1] * u, 0.1 * Q_extra[k, i-1]) if i < N else 0
+            ML = min(qL[k, i-1] * u, 0.1 * Q_extra[k, i-1]) #if i < N else 0
             
             # Friction slope (Manning's equation)
             R = A_i / (W[i] + 2*A_i/W[i])  # Hydraulic radius
             Sf = (n**2 * Q_extra[k, i-1] * abs(Q_extra[k, i-1])) / (A_i**2 * R**(4/3))
             
             # Expansion/contraction loss (simplified)
-            Sec = 0.1 * (A_i - A_im1)/dx if i > 1 else 0
+            Sec = 0.1 * (A_i - A_im1)/dx #if i > 1 else 0
             
             # Calculate the discharge at point i
             term1 = -ML - g*A_i*(( (A_i/W[i] - A_im1/W[i-1])/dx + Sf + Sec ))
@@ -193,34 +202,57 @@ def calculateDischarge(g, A, W, dx, dt, n, L, beta, Q_upstream, qL, u, sm=(1,1),
     return Q_extra
 
 
-create_height(h, std=0.05)
-q_L = calculate_lateral_flow(dx, h)
-A = area_from_initial(Q, h, q_L)
-Q_f = calculateDischarge(g, A, np.full(len(A), 300), dx, dt, n_m, L, 1.05, Q[:, 0], q_L, 2)
+def create_plot(data, title, ylabel, label):
+    fig, ax = plt.subplots()
+    ax.plot(np.arange(len(data)), data, color="blue", marker="o", label=label)
+    ax.set_xlabel("Tiempo (días)")
+    ax.set_ylabel(ylabel)
+    ax.set_title(title)
+    ax.grid(True)
+    ax.legend()
+    buf = io.BytesIO()
+    plt.tight_layout()
+    plt.savefig(buf, format="png")
+    plt.close(fig)
+    buf.seek(0)
+    return buf
 
 
-# fig, ax = plt.subplots(figsize=(10, 6))
-plt.plot(np.arange(len(A[:, 0])), A[:, 0], color="blue", marker="o", label='Área')
-plt.grid(True)
-plt.xlabel("Tiempo (días)")
-plt.ylabel("Área de la Sección Transversal")
-plt.title("Área por cada día en la posición inicial")
-plt.tight_layout()
-plt.show()
 
-plt.plot(np.arange(len(A[:, 0])), A[:, N//2], color="blue", marker="o", label='Área')
-plt.grid(True)
-plt.xlabel("Tiempo (días)")
-plt.ylabel("Área de la Sección Transversal")
-plt.title("Área por cada día en la mitad del camino")
-plt.tight_layout()
-plt.show()
+@app.get("/demo")
+async def calculate_matrices():
+    # === Compute matrices ===
+    create_height(h, std=0.05)
+    q_L = calculate_lateral_flow(dx, h)
+    A = area_from_initial(Q, h, q_L)
+    Q_f = calculateDischarge(g, A, np.full(N, W), dx, dt, n_m, L, 1.05, Q[:, 0], q_L, 2)
 
+    # === CSVs ===
+    qf_csv = io.StringIO()
+    a_csv = io.StringIO()
+    csv.writer(qf_csv).writerows(Q_f.tolist())
+    csv.writer(a_csv).writerows(A.tolist())
 
-plt.plot(np.arange(len(A[:, 0])), A[:, -1], color="blue", marker="o", label='Área')
-plt.grid(True)
-plt.xlabel("Tiempo (días)")
-plt.ylabel("Área de la Sección Transversal")
-plt.title("Área por cada día en la posición final")
-plt.tight_layout()
-plt.show()
+    # === Plots ===
+    plots = {
+        "area_upstream.png": create_area_plot(A[:, 0], "Área por cada día en la posición inicial"),
+        "area_midstream.png": create_area_plot(A[:, A.shape[1] // 2], "Área por cada día en la mitad del camino"),
+        "area_downstream.png": create_area_plot(A[:, -1], "Área por cada día en la posición final"),
+    }
+
+    # === Create ZIP ===
+    zip_buffer = io.BytesIO()
+    with zipfile.ZipFile(zip_buffer, "w") as zip_file:
+        zip_file.writestr("Q_f.csv", qf_csv.getvalue())
+        zip_file.writestr("A.csv", a_csv.getvalue())
+        for name, buf in plots.items():
+            zip_file.writestr(name, buf.getvalue())
+
+    zip_buffer.seek(0)
+
+    return StreamingResponse(
+        zip_buffer,
+        media_type="application/x-zip-compressed",
+        headers={"Content-Disposition": "attachment; filename=demo_outputs.zip"}
+    )
+
