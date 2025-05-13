@@ -1,6 +1,7 @@
 #!./.venv/bin/python3 
 import numpy as np
 import random
+import matplotlib.pyplot as plt 
 
 np.random.seed(42)
 
@@ -34,6 +35,10 @@ Q[:, 0] = Q_at_x0
 Q[:, -1] = np.random.normal(Q[:, 0].mean(), Q[:, 0].std(), Q[:, 0].size)
 
 def create_height(h, mean=h[:,0].mean(), std=h[:, 0].std()):
+    """
+    Args:
+        h: matrix-integer
+    """
     for i in range(h.shape[0]):
         for j in range(1, h.shape[1]):
             h[i, j] = np.random.normal(h[i, 0], std)
@@ -61,14 +66,14 @@ def ql(L1, L2):
 def sc(real_length, study_length):
     return real_length/study_length
 
-def area_from_initial(Q0, Q1, h0, h1, q_l, s_c=(1, 1), W=300, dt=1, L=472.74, N=100):
+def area_from_initial(Q0, Q1, h0, q_l, s_c=(1, 1), W=300, dt=1, L=472.74, N=100):
     """
     Estimate area A(x) using only initial discharge and height.
 
     Parameters:
         Q0: scalar, initial discharge at x=0
         h0: scalar, initial height at x=0
-        q_l: tuple (lateral inflow, seepage outflow)
+        q_l: vector, lateral flow at time t q_l[t]
         s_c: tuple (real_length, study_length) to compute sinuosity
         W: river width (m)
         dx: spatial step (m)
@@ -79,14 +84,50 @@ def area_from_initial(Q0, Q1, h0, h1, q_l, s_c=(1, 1), W=300, dt=1, L=472.74, N=
     """
     dx = L/N
     A = np.zeros(N)
-    A[0] = h0 * W  # initial area at x=0
+    A[0] = h0 * W
 
-    lateral_flow = ql(q_l[0], q_l[1])  # net lateral flow rate per unit length
     sinuosity = sc(s_c[0], s_c[1])     # path correction factor
 
     for j in range(1, N):
-        dQ_dx = (Q1-Q0)/dx # simplified assumption: constant source/sink
-        A[j] = ( dQ_dx * dx + sinuosity * A[j - 1]) / sinuosity
+        dQ_dx = (Q1-Q0)/dx
+        A[j] = (( (q_l[j-1] - dQ_dx) * dt + sinuosity * (A[0]+A[j - 1])) / sinuosity) - A[j-1] 
 
     return A
 
+def momentumEffect(Q, qL, A, B, v, seein=0, overin=0):
+    """
+        Args:
+            Todo es escalar.
+    """
+    if (seein == 1):
+        ML1 = 0
+    else:
+        ML1 = - (Q - qL)/2*A
+
+    if (overin == 1):
+        ML2 = -B*v*qL
+    else:
+        ML2 = - (Q - qL)/A
+
+    return ML1 + ML2
+
+def frictionSlope(u, n, R, c=1.0):
+    """
+        Args:
+        u: escalar - velocidad del agua.
+        n: escalar - Coeficiente de mannings.
+        c: escalar - Unidad dependiente constante. 1 en el SI 1.486 en el sistema británico.
+        R: Radio hidráulico (area dividio por el perímetro mojado).
+    """
+    return (u**2 * n**2) / (c * R**(2/3))
+
+def headLossSlope(Ke, g, Q, A, dx):
+    """
+        Args:
+        Ke: escalar - Coeficiente de head loss.
+        Q: escalar - cambio en el flujo.
+        A: escalar - area.
+        g: escalar - gravedad.
+        dx: escalar - paso en x.
+    """
+    return Ke * (Q/A)**2
