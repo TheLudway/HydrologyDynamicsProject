@@ -133,16 +133,62 @@ def headLossSlope(g, Q, A, dx, Ke=0.2):
     return (Ke * (Q/A)**2)/(2*g*dx)
 
 
-def chargeFromInitial(g, A1, A0, W1, W0, dx, dt, n, L, B, Q0, Q1, qL, u, sm=(1,1)):
+def chargeFromInitial(g, A, W, dx, dt, n, L, beta, Q_upstream, qL, u, sm=(1,1), N=100):
+    """
+    Calculate initial discharge (Q) along the river using finite differences
+    
+    Parameters:
+        g: gravitational acceleration (m/s²)
+        A: array of cross-sectional areas (m²) at t=0 [size N]
+        W: array of river widths (m) [size N]
+        dx: spatial step (m)
+        dt: time step (s)
+        n: Manning's roughness coefficient
+        L: river length (m)
+        beta: momentum coefficient
+        Q_upstream: upstream boundary condition (m³/s)
+        qL: array of lateral inflows (m²/s) [size N-1]
+        u: characteristic velocity (m/s)
+        sm: tuple of sinuosity coefficients (default (1,1))
+        N: number of spatial points
+        
+    Returns:
+        Q: array of discharge values along the river (m³/s) [size N]
+    """
+    Q = np.zeros(N)
+    Q[0] = Q_upstream  # Upstream boundary condition
+    
+    Sm = sm[0]  # Sinuosity coefficient for momentum equation
+    
+    for i in range(1, N):
+        # Calculate terms for momentum equation
+        A_i = A[i]
+        A_im1 = A[i-1]
+        W_i = W[i]
+        W_im1 = W[i-1]
+        
+        # Momentum effect from lateral flow
+        ML = qL[i-1] * u if i < len(qL) else 0  # Simplified momentum effect
+        
+        # Friction slope (Manning's equation)
+        R = A_i / (W_i + 2*A_i/W_i)  # Hydraulic radius
+        Sf = (n**2 * Q[i-1] * abs(Q[i-1])) / (A_i**2 * R**(4/3))
+        
+        # Expansion/contraction loss (simplified)
+        Sec = 0.1 * (A_i - A_im1)/dx if i > 1 else 0
+        
+        # Calculate the discharge at point i
+        term1 = -ML - g*A_i*(( (A_i/W_i - A_im1/W_im1)/dx + Sf + Sec ))
+        term2 = - (beta*Q[i-1]**2/A_i - beta*Q[i-1]**2/A_im1)/dx
+        Q[i] = ( (term1 + term2)*dt + Sm*Q[i-1] ) / Sm
+        
+        # Ensure physical realism
+        Q[i] = max(Q[i], 0)  # Discharge can't be negative
+        
+    return Q
 
-    Q_charge = np.zeros(N)
-    Q_charge[0] = Q0
-    for j in range(1, N):
-        ML = momentumEffect(Q0, qL[j-1], A[j-1], B)
-        Sf = frictionSlope(u, n, A1, L, W)
-        Sec = headLossSlope(g, Q0, A1, dx)
-        Sm = sc(sm[0], sm[1])
-        Q_charge[j] = ((- ML - (g * (A1) * ( ((A1/W1 - A0/W0)/dx) + Sf + Sec)) - ((B*Q1**2)/A1 - ((B*Q0**2)/A0))/dx) * dt + Sm * Q_charge[j-1])/Sm
 
-    return Q_charge
-
+create_height(h, std=0.05)
+q_L = calculate_lateral_flow(dx, h)
+A = area_from_initial(Q[0, 0], Q[1, 0], h[0, 0], q_l = q_L[0])
+Q_extra = chargeFromInitial(g, A, np.full(len(A), 300), dx, dt, n_m, L, 1.05, Q[0, 0], q_L[0], 1.1)
