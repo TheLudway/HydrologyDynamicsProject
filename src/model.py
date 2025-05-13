@@ -94,7 +94,7 @@ def area_from_initial(Q0, Q1, h0, q_l, s_c=(1, 1), W=300, dt=1, L=472.74, N=100)
 
     return A
 
-def momentumEffect(Q, qL, A, B, v, seein=0, overin=0):
+def momentumEffect(Q, qL, A, B, v=1, seein=0, overin=0):
     """
         Args:
             Todo es escalar.
@@ -111,17 +111,17 @@ def momentumEffect(Q, qL, A, B, v, seein=0, overin=0):
 
     return ML1 + ML2
 
-def frictionSlope(u, n, R, c=1.0):
+def frictionSlope(u, n, A, L, W, c=1.0):
     """
         Args:
         u: escalar - velocidad del agua.
         n: escalar - Coeficiente de mannings.
         c: escalar - Unidad dependiente constante. 1 en el SI 1.486 en el sistema británico.
-        R: Radio hidráulico (area dividio por el perímetro mojado).
+        R=L*W: Radio hidráulico (area dividio por el perímetro mojado).
     """
-    return (u**2 * n**2) / (c * R**(2/3))
+    return (u**2 * n**2) / (c * (A/(L * W))**(2/3))
 
-def headLossSlope(Ke, g, Q, A, dx):
+def headLossSlope(g, Q, A, dx, Ke=0.2):
     """
         Args:
         Ke: escalar - Coeficiente de head loss.
@@ -130,4 +130,19 @@ def headLossSlope(Ke, g, Q, A, dx):
         g: escalar - gravedad.
         dx: escalar - paso en x.
     """
-    return Ke * (Q/A)**2
+    return (Ke * (Q/A)**2)/(2*g*dx)
+
+
+def chargeFromInitial(g, A1, A0, W1, W0, dx, dt, n, L, B, Q0, Q1, qL, u, sm=(1,1)):
+
+    Q_charge = np.zeros(N)
+    Q_charge[0] = Q0
+    for j in range(1, N):
+        ML = momentumEffect(Q0, qL[j-1], A[j-1], B)
+        Sf = frictionSlope(u, n, A1, L, W)
+        Sec = headLossSlope(g, Q0, A1, dx)
+        Sm = sc(sm[0], sm[1])
+        Q_charge[j] = ((- ML - (g * (A1) * ( ((A1/W1 - A0/W0)/dx) + Sf + Sec)) - ((B*Q1**2)/A1 - ((B*Q0**2)/A0))/dx) * dt + Sm * Q_charge[j-1])/Sm
+
+    return Q_charge
+
