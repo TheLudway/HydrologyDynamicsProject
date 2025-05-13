@@ -1,6 +1,7 @@
 
 from fastapi import UploadFile, File, FastAPI
 from fastapi.responses import StreamingResponse
+from fastapi.middleware.cors import CORSMiddleware
 from typing import Dict, Any
 from demo import *
 from plot import *
@@ -11,6 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import zipfile
 import json
+
 
 
 description = """
@@ -42,6 +44,13 @@ app = FastAPI(
     },
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # or ["https://your-frontend.domain"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.post("/simulate")
