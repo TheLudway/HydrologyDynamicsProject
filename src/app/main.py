@@ -13,7 +13,34 @@ import zipfile
 import json
 
 
-app = FastAPI()
+description = """
+
+La API que permite determinar cosas de hidrodinámica y cosas del caudal y del área transversal.
+
+# TODO
+
+Muchas cosas, falta la documentación
+
+
+"""
+
+
+
+app = FastAPI(
+    title="Saint-Venant-Finite-Differences",
+    description=description,
+    summary="Permite resolver las ecuaciones de Saint-Venant utilizando diferencias finitas.",
+    version="0.0.1",
+    contact={
+        "name": "Ludwig Alvarado Becerra",
+        "url": "https://www.github.com/theludway",
+        "email": "ludwig.alvaradob@utadeo.edu.co"
+    },
+    license_info={
+        "name": "GPL V3",
+        "url": "https://www.gnu.org/licenses/gpl-3.0.en.html",
+    },
+)
 
 
 
@@ -25,19 +52,19 @@ async def simulate_from_json(json_file: UploadFile = File(...)):
 
     # === Extract values ===
     Q = np.array(params["Caudal"])                      # shape (nt, N)
-    h = np.array(params["height"])                      # shape (nt, N)
+    h = np.array(params["Height"])                      # shape (nt, N)
     nt, N = Q.shape                                     # aseguramos dimensiones
 
     W = float(params["RiverWidth"])
-    n_m = float(params["mannings_rougness"])
-    dt = float(params["TimeSetp"])
-    L = float(params["length"])
-    v = float(params["velocity"])
+    n_m = float(params["Mannings_Roughness"])
+    dt = float(params["TimeStep"])
+    L = float(params["Length"])
+    v = float(params["Velocity"])
     L_real = float(params["RiverRealLength"])
     L_euclid = float(params["RiverEucledianDistance"])
-    g = float(params["gravity"])
+    g = float(params["Gravity"])
     beta = float(params["BetaCoefficient"])
-    K = float(params["CoeficienteHeadLoss"])
+    K = float(params["CoefcicienteHeadLoss"])
 
     dx = L / N
 
@@ -46,7 +73,7 @@ async def simulate_from_json(json_file: UploadFile = File(...)):
     q_L = calculate_lateral_flow(dx, h, N=N, nt=nt)  # ✅ flujo lateral dinámico
     A = area_from_initial(Q, h, q_L, s_c=[L_real, L_euclid], W=W, dt=dt, L=L, N=N)
 
-    Q_f = calculateDischarge(g, A, np.full(N, W), dx, dt, n_m, L, beta, Q[:, 0], q_L, v, sm=[L_real, L_euclid])
+    Q_f = calculateDischarge(g, A, np.full(N, W), dx, dt, n_m, L, beta, Q[:, 0], q_L, v, sm=[L_real, L_euclid], N=N)
 
     # === Save CSVs ===
     qf_csv = io.StringIO()
