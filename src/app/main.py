@@ -35,7 +35,7 @@ app = FastAPI(
     version="0.0.1",
     contact={
         "name": "Ludwig Alvarado Becerra",
-        "url": "https://www.github.com/theludway",
+        "url": "www.ludwigalvarado.me",
         "email": "ludwig.alvaradob@utadeo.edu.co"
     },
     license_info={
